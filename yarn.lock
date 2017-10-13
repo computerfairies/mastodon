@@ -574,6 +574,10 @@ atob@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.1.tgz#ae2d5a729477f289d60dd7f96a6314a22dd6c22a"
 
+atrament@^0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/atrament/-/atrament-0.2.3.tgz#6ccbc0daa6d3f25e5aeaeb31befeb78e86980348"
+
 autoprefixer@^6.3.1:
   version "6.7.7"
   resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-6.7.7.tgz#1dbd1c835658e35ce3f9984099db00585c782014"
