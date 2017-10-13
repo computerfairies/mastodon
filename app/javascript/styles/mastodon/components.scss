@@ -3896,7 +3896,6 @@ a.status-card {
 }
 
 .boost-modal,
-.doodle-modal,
 .confirmation-modal,
 .report-modal,
 .actions-modal,
@@ -3925,10 +3924,6 @@ a.status-card {
   }
 }
 
-.doodle-modal {
-  width: unset;
-}
-
 .actions-modal {
   .status {
     background: $white;
@@ -3952,7 +3947,6 @@ a.status-card {
   }
 }
 
-.doodle-modal__action-bar,
 .boost-modal__action-bar,
 .confirmation-modal__action-bar,
 .mute-modal__action-bar {
@@ -5147,3 +5141,5 @@ noscript {
     background: lighten($ui-highlight-color, 7%);
   }
 }
+
+@import 'doodle';
