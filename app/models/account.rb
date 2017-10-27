@@ -74,9 +74,10 @@ class Account < ApplicationRecord
   validates :username, format: { with: /\A[a-z0-9_]+\z/i }, length: { maximum: 30 }, if: -> { local? && will_save_change_to_username? }
   validates_with UniqueUsernameValidator, if: -> { local? && will_save_change_to_username? }
   validates_with UnreservedUsernameValidator, if: -> { local? && will_save_change_to_username? }
-  validates :display_name, length: { maximum: 30 }, if: -> { local? && will_save_change_to_display_name? }
-  validates :note, length: { maximum: 160 }, if: -> { local? && will_save_change_to_note? }
-  validates :fields, length: { maximum: 4 }, if: -> { local? && will_save_change_to_fields? }
+  validates :display_name, length: { maximum: 50 }, if: -> { local? && will_save_change_to_display_name? }
+  validates :note, length: { maximum: 500 }, if: -> { local? && will_save_change_to_note? }
+  validates :fields, length: { maximum: 5 }, if: -> { local? && will_save_change_to_fields? }
+  validate :note_has_eight_newlines?, if: -> { local? && will_save_change_to_note? }
 
   # Timelines
   has_many :stream_entries, inverse_of: :account, dependent: :destroy
@@ -266,10 +267,8 @@ class Account < ApplicationRecord
   def save_with_optional_media!
     save!
   rescue ActiveRecord::RecordInvalid
-    self.avatar              = nil
-    self.header              = nil
-    self[:avatar_remote_url] = ''
-    self[:header_remote_url] = ''
+    self.avatar = nil if errors[:avatar].present?
+    self.header = nil if errors[:header].present?
     save!
   end
 
@@ -306,6 +305,10 @@ class Account < ApplicationRecord
     def to_h
       { name: @name, value: @value }
     end
+  end
+  
+  def note_has_eight_newlines?
+    errors.add(:note, 'Bio can\'t have more then 8 newlines') unless note.count("\n") <= 8
   end
 
   class << self

@@ -17,6 +17,12 @@ window.addEventListener('message', e => {
       id: data.id,
       height: document.getElementsByTagName('html')[0].scrollHeight,
     }, '*');
+
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(sizeBioText);
+    } else {
+      sizeBioText();
+    }
   });
 });
 
@@ -134,7 +140,7 @@ function main() {
     const name        = document.querySelector('.card .display-name strong');
 
     if (nameCounter) {
-      nameCounter.textContent = 30 - length(target.value);
+      nameCounter.textContent = 50 - length(target.value);
     }
 
     if (name) {
@@ -146,7 +152,7 @@ function main() {
     const noteCounter = document.querySelector('.note-counter');
 
     if (noteCounter) {
-      noteCounter.textContent = 160 - length(target.value);
+      noteCounter.textContent = sizeBioText - length(target.value);
     }
   });
 
@@ -175,6 +181,20 @@ function main() {
       lock.style.display = 'none';
     }
   });
+
+  function sizeBioText() {
+    const noteCounter = document.querySelector('.note-counter');
+    const bioTextArea = document.querySelector('#account_note');
+
+    if (noteCounter) {
+      noteCounter.textContent = 500 - length(bioTextArea.value);
+    }
+
+    if (bioTextArea) {
+      bioTextArea.style.height = 'auto';
+      bioTextArea.style.height = (bioTextArea.scrollHeight+3) + 'px';
+    }
+  }
 }
 
 loadPolyfills().then(main).catch(error => {
