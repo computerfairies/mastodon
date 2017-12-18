@@ -5,8 +5,6 @@ import ImmutablePropTypes from 'react-immutable-proptypes';
 import PropTypes from 'prop-types';
 import ReplyIndicatorContainer from '../containers/reply_indicator_container';
 import AutosuggestTextarea from '../../../components/autosuggest_textarea';
-import UploadButtonContainer from '../containers/upload_button_container';
-import DoodleButtonContainer from '../containers/doodle_button_container';
 import { defineMessages, injectIntl } from 'react-intl';
 import Collapsable from '../../../components/collapsable';
 import SpoilerButtonContainer from '../containers/spoiler_button_container';
@@ -19,6 +17,7 @@ import { isMobile } from '../../../is_mobile';
 import ImmutablePureComponent from 'react-immutable-pure-component';
 import { length } from 'stringz';
 import { countableText } from '../util/counter';
+import ComposeAttachOptions from './attach_options';
 
 const messages = defineMessages({
   placeholder: { id: 'compose_form.placeholder', defaultMessage: 'What is on your mind?' },
@@ -196,10 +195,10 @@ export default class ComposeForm extends ImmutablePureComponent {
 
         <div className='compose-form__buttons-wrapper'>
           <div className='compose-form__buttons'>
-            <UploadButtonContainer />
-            <DoodleButtonContainer />
-            <PrivacyDropdownContainer />
+            <ComposeAttachOptions />
             <SensitiveButtonContainer />
+            <div className='compose-form__buttons-separator' /> 
+            <PrivacyDropdownContainer />
             <SpoilerButtonContainer />
           </div>
           <div className='character-counter__wrapper'><CharacterCounter max={500} text={text} /></div>
