@@ -72,8 +72,8 @@ class Account < ApplicationRecord
   validates :username, format: { with: /\A[a-z0-9_]+\z/i }, length: { maximum: 30 }, if: -> { local? && will_save_change_to_username? }
   validates_with UniqueUsernameValidator, if: -> { local? && will_save_change_to_username? }
   validates_with UnreservedUsernameValidator, if: -> { local? && will_save_change_to_username? }
-  validates :display_name, length: { maximum: 30 }, if: -> { local? && will_save_change_to_display_name? }
-  validates :note, length: { maximum: 413 }, if: -> { local? && will_save_change_to_note? }
+  validates :display_name, length: { maximum: 50 }, if: -> { local? && will_save_change_to_display_name? }
+  validates :note, length: { maximum: 500 }, if: -> { local? && will_save_change_to_note? }
   validate :note_has_eight_newlines?, if: -> { local? && will_save_change_to_note? }
 
   # Timelines

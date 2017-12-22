@@ -119,7 +119,7 @@ function main() {
     const nameCounter = document.querySelector('.name-counter');
 
     if (nameCounter) {
-      nameCounter.textContent = 30 - length(target.value);
+      nameCounter.textContent = 50 - length(target.value);
     }
   });
 
@@ -146,7 +146,7 @@ function main() {
     const bioTextArea = document.querySelector('#account_note');
 
     if (noteCounter) {
-      noteCounter.textContent = 413 - length(bioTextArea.value);
+      noteCounter.textContent = 500 - length(bioTextArea.value);
     }
 
     if (bioTextArea) {
