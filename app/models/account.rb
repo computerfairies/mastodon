@@ -74,8 +74,6 @@ class Account < ApplicationRecord
   validates_with UnreservedUsernameValidator, if: -> { local? && will_save_change_to_username? }
   validates :display_name, length: { maximum: 50 }, if: -> { local? && will_save_change_to_display_name? }
   validates :note, length: { maximum: 500 }, if: -> { local? && will_save_change_to_note? }
-  validate :note_has_eight_newlines?, if: -> { local? && will_save_change_to_note? }
-
   # Timelines
   has_many :stream_entries, inverse_of: :account, dependent: :destroy
   has_many :statuses, inverse_of: :account, dependent: :destroy
@@ -233,10 +231,6 @@ class Account < ApplicationRecord
 
   def preferred_inbox_url
     shared_inbox_url.presence || inbox_url
-  end
-
-  def note_has_eight_newlines?
-    errors.add(:note, 'Bio can\'t have more then 8 newlines') unless note.count("\n") <= 8
   end
 
   class << self
