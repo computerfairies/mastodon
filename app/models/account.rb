@@ -77,8 +77,7 @@ class Account < ApplicationRecord
   validates :display_name, length: { maximum: 50 }, if: -> { local? && will_save_change_to_display_name? }
   validates :note, length: { maximum: 500 }, if: -> { local? && will_save_change_to_note? }
   validates :fields, length: { maximum: 5 }, if: -> { local? && will_save_change_to_fields? }
-  validate :note_has_eight_newlines?, if: -> { local? && will_save_change_to_note? }
-
+  
   # Timelines
   has_many :stream_entries, inverse_of: :account, dependent: :destroy
   has_many :statuses, inverse_of: :account, dependent: :destroy
@@ -305,10 +304,6 @@ class Account < ApplicationRecord
     def to_h
       { name: @name, value: @value }
     end
-  end
-  
-  def note_has_eight_newlines?
-    errors.add(:note, 'Bio can\'t have more then 8 newlines') unless note.count("\n") <= 8
   end
 
   class << self
