@@ -2,8 +2,12 @@
 @import "application";
 
 // getting started bg
+.drawer__inner > .mastodon {
+  background: none;
+}
+
 .getting-started {
-  background: image-url('mastodon-getting-started.png') no-repeat 50% 100%;
+  background: url('mastodon-getting-started.png') no-repeat 50% 100%;
   background-size: 100%;
 }
   
