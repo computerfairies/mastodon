@@ -23,6 +23,7 @@ ar:
       real_conversation_title: مبني لتحقيق تواصل حقيقي
       within_reach_body: إبقوا على اتصال دائم بأصدقائكم حيثما كانوا عبر عدة تطبيقات لنظام آي أواس و أندرويد و عدة منصات أخرى بفضل واجهة برمجية للتطبيقات و بيئة صديقة للتطوير.
       within_reach_title: في مُتناوَل يدك دائمًا
+    find_another_instance: إبحث عن مثيل خادوم آخر
     generic_description: "%{domain} هو سيرفر من بين سيرفرات الشبكة"
     hosted_on: ماستدون مُستضاف على %{domain}
     learn_more: تعلم المزيد

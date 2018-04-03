@@ -16,7 +16,6 @@ module Admin
       show_staff_badge
       bootstrap_timeline_accounts
       thumbnail
-      hero
       min_invite_role
       activity_api_enabled
       peers_api_enabled
@@ -35,7 +34,6 @@ module Admin
 
     UPLOAD_SETTINGS = %w(
       thumbnail
-      hero
     ).freeze
 
     def edit
