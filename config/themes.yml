@@ -1,1 +1,3 @@
 default: styles/cust.scss
+mastodon: styles/application.scss
+mastodon_light: styles/mastodon_light.scss
