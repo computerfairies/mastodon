@@ -952,14 +952,6 @@ $small-breakpoint: 960px;
         }
       }
     }
-
-    @media screen and (min-width: $small-breakpoint) {
-      display: grid;
-      grid-gap: 30px;
-      grid-template-columns: 1fr 1fr;
-      grid-auto-columns: 50%;
-      grid-auto-rows: max-content;
-    }
   }
 
   .extended-description {
