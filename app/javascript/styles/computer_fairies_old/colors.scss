@@ -1,36 +1,4 @@
 @import "variables";
-@import "application";
-
-// getting started bg
-.drawer__inner > .mastodon {
-  background: none;
-}
-
-.getting-started {
-  background: #0a000a url("/mastodon-getting-started.png") no-repeat 50% 100%;
-  background-size: 100%;
-}
-  
-// logo
-.landing-page .header .links .brand img, .logo-container h1 img {
-  height: 80px;
-}
-
-// mascot
-.landing-page .header-wrapper .mascot {
-  bottom: -56px;
-}
-
-// rounded edges
-$radius: 10px;
-
-.drawer__header, .search__input, .drawer__inner, .column, .tabs-bar {
-  border-radius: $radius;
-}
-
-.drawer__header {
-  overflow: hidden;
-}
 
 // button with proper accent and disabled
 .button {
@@ -46,100 +14,9 @@ $radius: 10px;
   }
 }
 
-// column tweaks
-.column-icon {
-  //color: $prim3;
-  background: none;
-
-  &:hover {
-    //color: lighten($prim3, 7%);
-  }
-}
-
-@media screen and (min-width: 1025px) {
-  // padding acommodates margins for columns in >1025px mode
-  .column-icon-clear {
-    padding: 5px;
-  }
-
-  // wider drawer
-  .drawer {
-    width: 22% !important;
-    min-width: 330px !important;
-    max-width: 450px !important;
-  }
-}
-
-.column {
-  // fullscreen
-  flex-grow: 1 !important;
-}
-
-.notification__message {
-  //color: $prim3;
-}
-
-/*.column-settings--section {
-  color: $prim3;
-}
-
-.setting-toggle {
-  color: $prim3;
-}
-
-.setting-text {
-  color: $prim3;
-  border-bottom: 2px solid $prim3;
-
-  &:focus, &:active {
-    color: $white;
-    border-bottom-color: $accent;
-  }
-}*/
-
 // reply readability
 .reply-indicator__content a {
   color: $ui-secondary-color !important;
-}
-
-// fix column spacing in case of box shadow
-@media screen and (min-width: 1025px) {
-  .columns-area .column, .columns-area .drawer {
-    padding: 0;
-    margin: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
-
-    &:first-child {
-      padding: 0;
-      margin-left: 10px;
-    }
-
-    &:last-child {
-      padding: 0;
-      margin-right: 10px;
-    }
-  }
-  
-  .column__wrapper .column {
-    padding: 0 !important;
-    margin-left: 5px;
-    margin-right: 10px;
-  }
-}
-
-// fix wonky verticalness on superwide screens
-@media screen and (min-width: 2560px) {
-  .column, .drawer {
-    height: initial !important;
-    margin-top: 10px !important;
-  }
-}
-
-// fix overflow on drawer__inner for box shadow
-.drawer__pager, .drawer__inner {
-  overflow: visible;
-  overflow-y: auto;
 }
 
 // secondary colors

@@ -866,8 +866,9 @@ en:
     title: "%{instance} Terms of Service and Privacy Policy"
   themes:
     contrast: High contrast
-    default: Mastodon
-    mastodon-light: Mastodon (light)
+    default: "Computer Fairies Default"
+    mastodon: "Mastodon Default Theme"
+    mastodon_light: "Mastodon Light Theme by skiant"
   time:
     formats:
       default: "%b %d, %Y, %H:%M"
