@@ -6,6 +6,7 @@ import { debounce } from 'lodash';
 import { isUserTouching } from '../../../is_mobile';
 
 export const links = [
+  <NavLink className='tabs-bar__link primary' to='/statuses/new' data-preview-title-id='tabs_bar.compose' data-preview-icon='pencil' ><i className='fa fa-fw fa-pencil' /><FormattedMessage id='tabs_bar.compose' defaultMessage='Compose' /></NavLink>,
   <NavLink className='tabs-bar__link primary' to='/timelines/home' data-preview-title-id='column.home' data-preview-icon='home' ><i className='fa fa-fw fa-home' /><FormattedMessage id='tabs_bar.home' defaultMessage='Home' /></NavLink>,
   <NavLink className='tabs-bar__link primary' to='/notifications' data-preview-title-id='column.notifications' data-preview-icon='bell' ><i className='fa fa-fw fa-bell' /><FormattedMessage id='tabs_bar.notifications' defaultMessage='Notifications' /></NavLink>,
   <NavLink className='tabs-bar__link primary' to='/search' data-preview-title-id='tabs_bar.search' data-preview-icon='bell' ><i className='fa fa-fw fa-search' /><FormattedMessage id='tabs_bar.search' defaultMessage='Search' /></NavLink>,

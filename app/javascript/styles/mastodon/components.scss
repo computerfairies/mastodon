@@ -1910,7 +1910,7 @@ a.account__display-name {
   font-size: 14px;
   font-weight: 500;
   border-bottom: 2px solid lighten($ui-base-color, 8%);
-  transition: all 50ms linear;
+  transition: all 200ms linear;
 
   .fa {
     font-weight: 400;
@@ -1927,6 +1927,7 @@ a.account__display-name {
   &:active {
     @media screen and (min-width: 631px) {
       background: lighten($ui-base-color, 14%);
+      transition: all 100ms linear;
     }
   }
 
