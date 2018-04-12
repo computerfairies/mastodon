@@ -82,3 +82,62 @@ $radius: 10px;
   overflow: visible;
   overflow-y: auto;
 }
+
+//confetti
+.confetti-overlay {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.status__wrapper, .detailed-status {
+  position: relative;
+  overflow: hidden;
+  // this prevents the confetti overlay from escaping
+}
+
+//party hats
+.account__avatar,
+.account__avatar-overlay-base,
+.account__avatar-overlay-overlay,
+.avatar {
+  &:after {
+    background: url('../images/partyhat.png');
+    background-size: contain;
+    width: inherit;
+    height: inherit;
+    display: block;
+    content: ' ';
+    position: relative;
+  }
+}
+
+.account__avatar,
+.account__avatar-overlay-base {
+  &:after {
+    top: -4px;
+    left: -4px;
+  }
+}
+
+.account__avatar-overlay-overlay {
+  &:after {
+    top: -2px;
+    left: -2px;
+  }
+}
+.avatar {
+  &:after {
+    top: -52px;
+    left: -4px;
+  }
+
+}
+
+.actions-modal {
+  .status__avatar:after {
+    height: 48px;
+    background: none;
+  }
+}

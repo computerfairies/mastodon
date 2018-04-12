@@ -12,6 +12,8 @@ import CardContainer from '../containers/card_container';
 import ImmutablePureComponent from 'react-immutable-pure-component';
 import Video from '../../video';
 
+import ConfettiOverlay from '../../../components/confetti_overlay';
+
 export default class DetailedStatus extends ImmutablePureComponent {
 
   static contextTypes = {
@@ -125,6 +127,7 @@ export default class DetailedStatus extends ImmutablePureComponent {
             </span>
           </Link>
         </div>
+        <ConfettiOverlay status={status} />
       </div>
     );
   }
