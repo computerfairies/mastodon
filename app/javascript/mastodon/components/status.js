@@ -1,4 +1,4 @@
-import React from 'react';
+  import React from 'react';
 import ImmutablePropTypes from 'react-immutable-proptypes';
 import PropTypes from 'prop-types';
 import Avatar from './avatar';
@@ -13,6 +13,8 @@ import ImmutablePureComponent from 'react-immutable-pure-component';
 import { MediaGallery, Video } from '../features/ui/util/async-components';
 import { HotKeys } from 'react-hotkeys';
 import classNames from 'classnames';
+
+import ConfettiOverlay from './confetti_overlay';
 
 // We use the component (and not the container) since we do not want
 // to use the progress bar to show download progress
@@ -255,6 +257,7 @@ export default class Status extends ImmutablePureComponent {
 
             <StatusActionBar status={status} account={account} {...other} />
           </div>
+          <ConfettiOverlay status={status} />
         </div>
       </HotKeys>
     );
