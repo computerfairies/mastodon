@@ -14,7 +14,7 @@ const MIN_PARTICLES = 8;
 const PARTICLE_DELETE_PROBABILITY = 1;
 
 // note: months start at 0 in javascript because, fuck if i know
-const BIRTHDAY = new Date(Date.UTC(2017, 3, 12, 0, 0));
+const BIRTHDAY = new Date(Date.UTC(2017, 3, 13, 0, 0));
 const BIRTHDAY_TOLERANCE = 24*60*60*1000;
 
 function is_birthday(date){
