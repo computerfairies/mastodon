@@ -642,7 +642,7 @@ $small-breakpoint: 960px;
     }
 
     img {
-      height: 32px;
+      height: 100px;
       position: relative;
       top: 4px;
       left: -10px;
@@ -761,7 +761,7 @@ $small-breakpoint: 960px;
 
     .brand {
       text-align: center;
-      padding: 30px 0;
+      padding: 0 0;
       margin-bottom: 10px;
 
       img {
@@ -805,6 +805,8 @@ $small-breakpoint: 960px;
       display: flex;
       justify-content: flex-end;
       align-items: flex-end;
+      
+      z-index: 2;
 
       .information-board__section {
         flex: 1 0 auto;
@@ -820,6 +822,7 @@ $small-breakpoint: 960px;
     .row__mascot {
       flex: 1;
       margin: 10px -50px 0 0;
+      position: absolute;
 
       @media screen and (max-width: $no-gap-breakpoint) {
         display: none;
@@ -908,13 +911,12 @@ $small-breakpoint: 960px;
   }
 
   &__mascot {
-    height: 104px;
     position: relative;
-    left: -40px;
-    bottom: 25px;
+    left: -70px;
+    bottom: 0px;
 
     img {
-      height: 190px;
+      height: 230px;
       width: auto;
     }
   }
