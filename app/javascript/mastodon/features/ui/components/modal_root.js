@@ -47,6 +47,7 @@ export default class ModalRoot extends React.PureComponent {
     return {
       overflowY: visible ? 'hidden' : null,
     };
+  }
   
   state = {
     revealed: false,
