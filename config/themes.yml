@@ -1,4 +1,5 @@
 default: styles/computer_fairies_old.scss
 mastodon: styles/application.scss
+mastodon-light: styles/mastodon-light.scss
 mastodon_light: styles/mastodon_light.scss
 contrast: styles/contrast.scss
