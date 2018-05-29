@@ -23,6 +23,7 @@ class Formatter
 
     unless status.local?
       html = reformat(raw_content)
+      html = rp_format(html)
       html = encode_custom_emojis(html, status.emojis, options[:autoplay]) if options[:custom_emojify]
       return html.html_safe # rubocop:disable Rails/OutputSafety
     end
@@ -46,7 +47,7 @@ class Formatter
     pclasses = { "\u{1F4AD}" => "thought_bubble",
                  "\u{1F4AC}" => "speech_bubble",
                  "\u{1F6AB}" => "out_of_character" }
-    replace = html.gsub(/^<p>[\u{1F300}-\u{1F6FF}]+/) { |match|
+    replace = html.gsub(/<p>[\u{1F300}-\u{1F6FF}]+/) { |match|
         pclasses[match[3]] ? "<p class='#{pclasses[match[3]]}'>#{match[3]}" : match }
     replace.html_safe
   end
