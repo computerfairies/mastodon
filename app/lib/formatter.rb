@@ -43,9 +43,13 @@ class Formatter
   end
   
   def rp_format(html)
-    pclass = "<p class='thought_bubble'>"
-    pclass = pclass.html_safe
-    replace = html.gsub(/^<p>\u{1F4AD}/) { |match| "#{pclass}\u{1F4AD}" }
+    pclasses = { "\u{1F4AD}" => "thought_bubble",
+                 "\u{1F4AC}" => "speech_bubble",
+                 "\u{1F6AB}" => "out_of_character" }
+    replace = html.gsub(/^<p>[\u{1F300}-\u{1F6FF}]+/) { |match|
+        pclasses[match[3]] ? "<p class='#{pclasses[match[3]]}'>#{match[3]}" : match }
+    replace.html_safe
+  end
 
   def reformat(html)
     sanitize(html, Sanitize::Config::MASTODON_STRICT)
