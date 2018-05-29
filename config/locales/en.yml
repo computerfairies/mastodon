@@ -865,9 +865,10 @@ en:
       <p>Originally adapted from the <a href="https://github.com/discourse/discourse">Discourse privacy policy</a>.</p>
     title: "%{instance} Terms of Service and Privacy Policy"
   themes:
-    contrast: High contrast
+    contrast: "High contrast"
     default: "Computer Fairies Default"
-    mastodon: "Mastodon Default Theme"
+    mastodon: "Mastodon Default"
+    mastodon-light: "Mastodon Default Light"
     mastodon_light: "Mastodon Light Theme by skiant"
   time:
     formats:
