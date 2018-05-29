@@ -1,3 +1,13 @@
+//defines custom local styles for RP emoji-key formatting
+
 .thought_bubble {
- font-style: italic;
+  font-style: italic;
+}
+
+.speech_bubble {
+  font-style: bold;
+}
+
+.out_of_character {
+  font-color: $ui-secondary-color;
 }
