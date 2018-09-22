@@ -1136,6 +1136,21 @@ $small-breakpoint: 960px;
     }
   }
 
+  .extended-description {
+    padding: 50px 0;
+    font-family: 'mastodon-font-sans-serif', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: $darker-text-color;
+
+    a {
+      color: $highlight-text-color;
+      text-decoration: underline;
+    }
+  }
+
   .footer-links {
     padding-bottom: 50px;
     text-align: right;
