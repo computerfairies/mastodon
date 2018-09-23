@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-contrast: styles/contrast.scss
-mastodon-light: styles/mastodon-light.scss
-=======
->>>>>>> d650b0b9717fadf0528b00fbc907c9d8a90d5018
 default: styles/computer_fairies_old.scss
 mastodon: styles/application.scss
 mastodon-light: styles/mastodon-light.scss
