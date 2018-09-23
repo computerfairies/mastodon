@@ -1,5 +1,16 @@
 @import "variables";
 
+// getting started bg
+.drawer__inner__mastodon {
+  display: none;
+}
+
+.getting-started {
+  background: #0a000a url("/mastodon-getting-started.png") no-repeat 50% 100%;
+  background-size: 100%;
+  height: 100%;
+}
+
 // button with proper accent and disabled
 .button {
   background-color: darken($accent, 3%);
@@ -12,11 +23,6 @@
   &:disabled {
     background-color: $disabled;
   }
-}
-
-// reply readability
-.reply-indicator__content a {
-  color: $ui-secondary-color !important;
 }
 
 // secondary colors
@@ -86,6 +92,37 @@
   }
   .status__action-bar__counter__label {
     color: $sec-light-text-color;
+  }
+}
+
+// reply readability
+.reply-indicator {
+  .display-name__account {
+    color: $ui-secondary-color !important;
+  }
+
+  .icon-button {
+    &.inverted {
+      color: $ui-lighter-text-color;
+  
+      &:hover,
+      &:active,
+      &:focus {
+        color: darken($ui-lighter-text-color, 7%);
+      }
+  
+      &.disabled {
+        color: lighten($ui-lighter-text-color, 7%);
+      }
+  
+      &.active {
+        color: $ui-highlight-text-color;
+  
+        &.disabled {
+          color: lighten($ui-highlight-text-color, 13%);
+        }
+      }
+    }
   }
 }
 
