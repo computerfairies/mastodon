@@ -103,23 +103,23 @@
 
   .icon-button {
     &.inverted {
-      color: $ui-lighter-text-color;
+      color: $lighter-text-color;
   
       &:hover,
       &:active,
       &:focus {
-        color: darken($ui-lighter-text-color, 7%);
+        color: darken($lighter-text-color, 7%);
       }
   
       &.disabled {
-        color: lighten($ui-lighter-text-color, 7%);
+        color: lighten($lighter-text-color, 7%);
       }
   
       &.active {
-        color: $ui-highlight-text-color;
+        color: $highlight-text-color;
   
         &.disabled {
-          color: lighten($ui-highlight-text-color, 13%);
+          color: lighten($highlight-text-color, 13%);
         }
       }
     }
