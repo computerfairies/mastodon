@@ -97,7 +97,7 @@
 
 // reply readability
 .reply-indicator {
-  .display-name__account {
+  .reply-indicator__content a, .display-name__account {
     color: $ui-secondary-color !important;
   }
 
