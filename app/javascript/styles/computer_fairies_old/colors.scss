@@ -1,15 +1,5 @@
 @import "variables";
 
-// getting started bg
-.drawer__inner__mastodon {
-  display: none;
-}
-
-.getting-started {
-  background: #0a000a url("/mastodon-getting-started.png") no-repeat 50% 100%;
-  background-size: 100%;
-}
-
 // button with proper accent and disabled
 .button {
   background-color: darken($accent, 3%);
