@@ -18,14 +18,24 @@ class FanOutOnWriteService < BaseService
       deliver_to_lists(status)
     end
 
-    return if status.account.silenced? || !status.public_visibility? || status.reblog?
+    return if status.account.silenced? || status.reblog?
+    return if !status.public_visibility? && !status.local_visibility?
 
-    deliver_to_hashtags(status)
+    if status.local_visibility?
+      deliver_to_local_hashtags(status)
+    else
+      deliver_to_hashtags(status)
+    end
 
     return if status.reply? && status.in_reply_to_account_id != status.account_id
 
-    deliver_to_public(status)
-    deliver_to_media(status) if status.media_attachments.any?
+    if status.local_visibility?
+      deliver_to_local(status)
+      deliver_to_local_media(status) if status.media_attachments.any?
+    else
+      deliver_to_public(status)
+      deliver_to_media(status) if status.media_attachments.any?
+    end
   end
 
   private
@@ -79,6 +89,14 @@ class FanOutOnWriteService < BaseService
     end
   end
 
+  def deliver_to_local_hashtags(status)
+    Rails.logger.debug "Delivering status #{status.id} to local hashtags"
+
+    status.tags.pluck(:name).each do |hashtag|
+      Redis.current.publish("timeline:hashtag:#{hashtag}:local", @payload) if status.local?
+    end
+  end
+
   def deliver_to_public(status)
     Rails.logger.debug "Delivering status #{status.id} to public timeline"
 
@@ -90,6 +108,18 @@ class FanOutOnWriteService < BaseService
     Rails.logger.debug "Delivering status #{status.id} to media timeline"
 
     Redis.current.publish('timeline:public:media', @payload)
+    Redis.current.publish('timeline:public:local:media', @payload) if status.local?
+  end
+
+  def deliver_to_local(status)
+    Rails.logger.debug "Delivering status #{status.id} to local timeline"
+
+    Redis.current.publish('timeline:public:local', @payload) if status.local?
+  end
+
+  def deliver_to_local_media(status)
+    Rails.logger.debug "Delivering status #{status.id} to local media timeline"
+
     Redis.current.publish('timeline:public:local:media', @payload) if status.local?
   end
 

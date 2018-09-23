@@ -250,6 +250,8 @@
   "privacy.public.short": "Public",
   "privacy.unlisted.long": "Do not post to public timelines",
   "privacy.unlisted.short": "Unlisted",
+  "privacy.local.long": "Post to local timeline and followers only",
+  "privacy.local.short": "Local",
   "regeneration_indicator.label": "Loading…",
   "regeneration_indicator.sublabel": "Your home feed is being prepared!",
   "relative_time.days": "{number}d",

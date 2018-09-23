@@ -23,7 +23,7 @@ class ActivityPub::DistributionWorker
   private
 
   def skip_distribution?
-    @status.direct_visibility?
+    @status.direct_visibility? || @status.direct_visibility?
   end
 
   def relayable?

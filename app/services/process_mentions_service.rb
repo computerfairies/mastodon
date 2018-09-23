@@ -48,6 +48,8 @@ class ProcessMentionsService < BaseService
 
     if mentioned_account.local?
       LocalNotificationWorker.perform_async(mention.id)
+    elsif @status.local_visibility?
+      return
     elsif mentioned_account.ostatus? && !@status.stream_entry.hidden?
       NotificationWorker.perform_async(ostatus_xml, @status.account_id, mentioned_account.id)
     elsif mentioned_account.activitypub?

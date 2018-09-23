@@ -12,7 +12,9 @@ class StatusPolicy < ApplicationPolicy
   end
 
   def show?
-    if direct?
+    if local?
+      current_account.nil? || current_account.local?
+    elsif direct?
       owned? || mention_exists?
     elsif private?
       owned? || following_author? || mention_exists?
@@ -43,6 +45,10 @@ class StatusPolicy < ApplicationPolicy
 
   def direct?
     record.direct_visibility?
+  end
+
+  def local?
+    record.local_visibility?
   end
 
   def owned?

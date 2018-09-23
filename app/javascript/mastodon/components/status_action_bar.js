@@ -188,6 +188,8 @@ export default class StatusActionBar extends ImmutablePureComponent {
       reblogIcon = 'envelope';
     } else if (status.get('visibility') === 'private') {
       reblogIcon = 'lock';
+    } else if (status.get('visibility') === 'local') {
+      reblogIcon = 'users';
     }
 
     if (status.get('in_reply_to_id', null) === null) {

@@ -823,7 +823,15 @@
         "id": "privacy.unlisted.long"
       },
       {
-        "defaultMessage": "Followers-only",
+        "defaultMessage": "Local",
+        "id": "privacy.local.short"
+      },
+      {
+        "defaultMessage": "Post to local timeline and followers only",
+        "id": "privacy.local.long"
+      },
+      {
+        "defaultMessage": "Listeners Only",
         "id": "privacy.private.short"
       },
       {

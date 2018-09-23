@@ -777,6 +777,8 @@ en:
       public_long: Everyone can see
       unlisted: Unlisted
       unlisted_long: Everyone can see, but not listed on public timelines
+      local: Local
+      local_long: Everyone can see on public account pages, but not sent to other sites.
   stream_entries:
     pinned: Pinned toot
     reblogged: boosted
