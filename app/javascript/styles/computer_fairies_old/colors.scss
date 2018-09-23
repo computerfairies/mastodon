@@ -30,25 +30,116 @@
 }
 
 // secondary colors
-.text-icon-button, .drawer .icon-button, .drawer .icon-button.inverted {
-  color: $sec1;
+.drawer {
+  .icon-button {
+    color: $sec-action-button-color;
+    
+    &:hover,
+    &:active,
+    &:focus {
+      color: lighten($sec-action-button-color, 7%);
+    }
+  
+    &.disabled {
+      color: darken($sec-action-button-color, 13%);
+    }
+  
+    &.active {
+      color: $sec-highlight-text-color;
+    }
+  
+    &.inverted {
+      color: $sec-lighter-text-color;
+  
+      &:hover,
+      &:active,
+      &:focus {
+        color: darken($sec-lighter-text-color, 7%);
+      }
+  
+      &.disabled {
+        color: lighten($sec-lighter-text-color, 7%);
+      }
+  
+      &.active {
+        color: $sec-highlight-text-color;
+  
+        &.disabled {
+          color: lighten($sec-highlight-text-color, 13%);
+        }
+      }
+    }
+  }
+
+  .focusable:focus {
+    background: lighten($sec-base-color, 4%);
+
+    .status.status-direct {
+      background: lighten($sec-base-color, 12%);
+    }
+
+    .detailed-status,
+    .detailed-status__action-bar {
+      background: lighten($sec-base-color, 8%);
+    }
+  }
+
+  .account__display-name > span {
+    color: $sec3;
+  }
+
+  .display-name__account {
+    color: $sec-light-text-color;
+  }
+  .status__relative-time {
+    color: $sec-light-text-color;
+  }
+  .status__action-bar__counter__label {
+    color: $sec-light-text-color;
+  }
+}
+
+.text-icon-button {
+  color: $sec1 !important;
 
   &:hover, &:active, &:focus {
-    color: lighten($sec1, 26%);
+    color: lighten($sec1, 26%) !important;
   }
 
   &.disabled {
-    color: lighten($sec1, 13%);
+    color: lighten($sec1, 13%) !important;
   }
 
   &.active {
-    color: $sec3;
+    color: $sec3 !important;
     text-shadow: 0px 0px 5px #000;
   }
 }
 
-.dropdown--active .icon-button {
-  color: $accent;
+.drawer__tab {
+  color: $sec3;
+}
+
+.drawer__inner {
+  background: lighten($sec1, 13%);
+
+  &.darker {
+    background: $sec1;
+  }
+}
+
+.pseudo-drawer {
+  background: lighten($sec1, 13%);
+}
+
+.drawer__header {
+  background: lighten($sec1, 8%);
+
+  a {
+    &:hover {
+      background: lighten($sec1, 3%);
+    }
+  }
 }
 
 .compose-form__warning {
@@ -111,6 +202,10 @@
     }
   }
 
+  .icon-button {
+    color: $accent;
+  }
+
   & > ul {
     background: $sec3;
     box-shadow: 0 0 15px rgba($black, 0.4);
@@ -127,29 +222,10 @@
   }
 }
 
-.drawer__tab {
-  color: $sec2;
-  color: $sec3;
-}
-
-.drawer__inner {
-  background: lighten($sec1, 13%);
-
-  &.darker {
-    background: $sec1;
-  }
-}
-
-.pseudo-drawer {
-  background: lighten($sec1, 13%);
-}
-
-.drawer__header {
-  background: lighten($sec1, 8%);
-
+.dropdown-menu__item {
   a {
-    &:hover {
-      background: lighten($sec1, 3%);
+    &:hover, &:active, &:focus {
+      color: $black;
     }
   }
 }
@@ -286,8 +362,12 @@
   }
 }
 
-.drawer .account__display-name > span {
-  color: $sec3;
+.search-results__section {
+  h5 {
+    background: darken($sec-base-color, 4%);
+    border-bottom: 1px solid lighten($sec-base-color, 8%);
+    color: lighten($sec1, 26%);
+  }
 }
 
 .loading-bar {

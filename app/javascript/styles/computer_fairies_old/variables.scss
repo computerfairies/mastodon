@@ -27,11 +27,6 @@ $error-value-color: $error-red !default;
 $accent:   #fa41e2 !default; // vibrant (accent)
 $disabled: #ba82b2 !default; // vibrant (disabled)
 
-// drawer
-$sec1: #053825 !default; // darkest green
-$sec2: #108158 !default; // lighter green
-$sec3: #07e4b3 !default; // lightest green
-
 // Tell UI to use selected colors
 //<<<<<<< HEAD
 //$ui-base-color: $classic-base-color !default;                  // Darkest
@@ -45,8 +40,29 @@ $sec3: #07e4b3 !default; // lightest green
 //$ui-secondary-color: #DF95BC !default;   // Lightest
 //$ui-highlight-color: $accent !default;   // Vibrant
 
-$ui-base-color: #0a000a !default;        // Darkest
-$ui-base-lighter-color: #740d84 !default; // Lighter darkest
-$ui-primary-color: #a631c6 !default;     // Lighter
-$ui-secondary-color: #d495df !default;   // Lightest
+$ui-base-color: #2c082c !default;        // Darkest
+$ui-base-lighter-color: #a75eb3 !default; // Lighter darkest
+$ui-primary-color: #b949d8 !default;     // Lighter
+$ui-secondary-color: #d990e6 !default;   // Lightest
 $ui-highlight-color: $accent !default;   // Vibrant
+
+// drawer
+$sec-base-color: #053829 !default; // darkest green
+$sec-base-lighter-color: lighten($sec-base-color, 26%) !default;
+$sec-primary-color: #10815b !default; // lighter green
+$sec-secondary-color: #4ad6ca !default; // lightest green
+$sec-highlight-color: #00d8a9;
+$sec1: $sec-base-color;
+$sec2: $sec-primary-color;
+$sec3: $sec-secondary-color;
+
+// Variables for texts
+$sec-darker-text-color: $sec-primary-color !default;
+$sec-dark-text-color: $sec-base-lighter-color !default;
+$sec-secondary-text-color: $sec-secondary-color !default;
+$sec-highlight-text-color: $sec-highlight-color !default;
+$sec-action-button-color: $sec-base-lighter-color !default;
+// For texts on inverted backgrounds
+$sec-inverted-text-color: $sec-base-color !default;
+$sec-lighter-text-color: $sec-base-lighter-color !default;
+$sec-light-text-color: $sec-primary-color !default;
