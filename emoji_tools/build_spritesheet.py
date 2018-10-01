@@ -54,7 +54,8 @@ for emoji in emoji_map:
       print(filename)
       found = True
       count_found += 1
-      shutil.copy2(filename, os.path.join(settings['destination'], codepoint_original.lower().lstrip('0') + '.svg'))
+      if settings['copy_sources']:
+        shutil.copy2(filename, os.path.join(settings['destination'], codepoint_original.lower().lstrip('0') + '.svg'))
       break
 
   # source not found, warn
