@@ -1,1 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><path fill="#F4900C" d="M36 18c0 9.941-8.059 18-18 18S0 27.941 0 18C0 8.06 8.059 0 18 0s18 8.06 18 18z"/><path fill="#FFF" d="M6.988 9.546c-.494 0-.78-.39-.78-.962 0-.546.286-.936.78-.936h22.049c.468 0 .754.39.754.936s-.286.962-.754.962h-2.6v17.915c0 1.899-.858 2.652-3.276 2.652-1.093 0-2.392-.131-3.406-.365-.494-.103-.78-.467-.78-.935 0-.078 0-.182.026-.285.104-.521.416-.807.858-.807.078 0 .182 0 .26.025.884.234 2.027.391 2.834.391 1.092 0 1.404-.234 1.404-1.248V9.546H6.988zm13.078 12.532c0 1.664-.728 2.314-2.366 2.314h-6.136c-1.664 0-2.392-.65-2.392-2.314v-6.941c0-1.664.728-2.314 2.392-2.314H17.7c1.638 0 2.366.65 2.366 2.314v6.941zm-2.807.443c.546 0 .806-.156.806-.729v-6.37c0-.572-.26-.728-.806-.728h-5.304c-.52 0-.78.156-.78.728v6.37c0 .572.26.729.78.729h5.304z"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+<metadata>
+<rdf:RDF xmlns:cc="http://web.resource.org/cc/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc = "http://purl.org/dc/elements/1.1/"
+         >
+
+     <rdf:Description rdf:about="">
+       <dc:title>Mutant Standard emoji v0.3.0</dc:title>
+     </rdf:Description>
+
+    <cc:work rdf:about="">
+        <cc:license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+        <cc:attributionName>Dzuk</cc:attributionName>
+        <cc:attributionURL>http://mutant.tech/</cc:attributionURL>
+    </cc:work>
+
+</rdf:RDF>
+</metadata>
+<rect id="acceptable" x="0" y="0" width="32" height="32" style="fill:none;"/><g id="outline"><circle cx="16" cy="16" r="16"/></g><g id="emoji"><circle cx="16" cy="16" r="14" style="fill:#ef9b00;"/><path d="M21.204,21.568l0,-11.866l-13.489,0l0,-1.797l17.315,0l0,1.797l-1.739,0l0,11.789c0,1.275 -0.148,2.058 -0.445,2.348c-0.296,0.289 -1.069,0.434 -2.319,0.434c-0.734,0 -1.797,-0.025 -3.188,-0.077l-0.097,-1.701c1.714,0.065 2.699,0.097 2.957,0.097c0.489,0 0.779,-0.048 0.869,-0.145c0.091,-0.096 0.136,-0.39 0.136,-0.879Zm-9.663,-3.479l5.121,0l0,-4.676l-5.121,0l0,4.676Zm0,1.604l0,1.546l-2.087,0l0,-9.411l9.237,0l0,7.865l-7.15,0Z" style="fill:#fff;fill-rule:nonzero;"/></g></svg>

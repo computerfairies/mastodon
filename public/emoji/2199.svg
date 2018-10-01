@@ -1,1 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><path fill="#3B88C3" d="M36 4c0-2.209-1.791-4-4-4H4C1.791 0 0 1.791 0 4v28c0 2.209 1.791 4 4 4h28c2.209 0 4-1.791 4-4V4z"/><path fill="#FFF" d="M9 11v16h16z"/><path fill="#FFF" d="M9.53 20.814L23.343 7 29 12.657 15.186 26.471z"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+<metadata>
+<rdf:RDF xmlns:cc="http://web.resource.org/cc/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc = "http://purl.org/dc/elements/1.1/"
+         >
+
+     <rdf:Description rdf:about="">
+       <dc:title>Mutant Standard emoji v0.3.0</dc:title>
+     </rdf:Description>
+
+    <cc:work rdf:about="">
+        <cc:license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+        <cc:attributionName>Dzuk</cc:attributionName>
+        <cc:attributionURL>http://mutant.tech/</cc:attributionURL>
+    </cc:work>
+
+</rdf:RDF>
+</metadata>
+<rect id="arrow_down_left" x="0" y="0" width="32" height="32" style="fill:none;"/><g id="outline"><path d="M10,19.172l14.971,-14.971l2.828,2.799l0,2.029l-12.971,12.971l8.172,0l0,6l-17,0l0,-19l4,0l0,10.172Z" style="fill-rule:nonzero;stroke:#000;stroke-width:4px;"/></g><g id="emoji"><path d="M23,26l-1,-1l-15,0l-1,1l0,2l17,0l0,-2Z" style="fill:#747474;"/><path d="M27.799,9.029l-17.799,17.799l-2.828,-2.828l17.799,-17.799l2.828,0.799l0,2.029Z" style="fill:#747474;fill-rule:nonzero;"/><path d="M10,19.172l14.971,-14.971l2.828,2.828l-14.971,14.971l10.172,0l0,4l-17,0l0,-17l4,0l0,10.172Z" style="fill:#fff;fill-rule:nonzero;"/></g></svg>

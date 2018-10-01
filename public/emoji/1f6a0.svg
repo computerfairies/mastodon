@@ -1,1 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><path fill="#58595B" d="M19 12V5h-2v7h-5v5h12v-5z"/><path fill="#FFD983" d="M34 28V18c0-2.209-1.791-4-4-4H6c-2.209 0-4 1.791-4 4v10h32z"/><path fill="#269" d="M2 22v6c0 4.418 3.582 8 8 8h16c4.418 0 8-3.582 8-8v-6H2z"/><path fill="#88C9F9" d="M2 18h6v9H2zm8 0h7v9h-7zm9 0h7v9h-7zm9 0h6v9h-6z"/><path fill="#6D6E71" d="M33.213 10.977L3.27 2.954c-.533-.144-.85-.691-.707-1.226.143-.533.691-.85 1.225-.707L33.73 9.045c.534.144.851.691.707 1.225-.142.534-.69.851-1.224.707z"/><path fill="#A7A9AC" d="M23.348 4.361l-1.933-.518.259-.965-5.795-1.553-.259.966-1.932-.518c-1.067-.285-2.164.348-2.45 1.415-.286 1.066.348 2.163 1.414 2.449l9.66 2.588c1.066.286 2.163-.348 2.449-1.414.286-1.066-.347-2.164-1.413-2.45z"/><path fill="#808285" d="M13.877 4.931c-.286 1.066-1.383 1.7-2.45 1.414-1.066-.286-1.7-1.383-1.414-2.449.286-1.067 1.383-1.7 2.449-1.415 1.068.286 1.701 1.382 1.415 2.45zm11.592 3.105c-.286 1.067-1.383 1.7-2.449 1.414-1.067-.286-1.7-1.382-1.414-2.449.285-1.067 1.382-1.7 2.449-1.414 1.066.286 1.7 1.383 1.414 2.449z"/><path fill="#55ACEE" d="M2 18h6v2H2zm8 0h7v2h-7zm9 0h7v2h-7zm9 0h6v2h-6z"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-miterlimit:1.5;">
+<metadata>
+<rdf:RDF xmlns:cc="http://web.resource.org/cc/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc = "http://purl.org/dc/elements/1.1/"
+         >
+
+     <rdf:Description rdf:about="">
+       <dc:title>Mutant Standard emoji v0.3.0</dc:title>
+     </rdf:Description>
+
+    <cc:work rdf:about="">
+        <cc:license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+        <cc:attributionName>Dzuk</cc:attributionName>
+        <cc:attributionURL>http://mutant.tech/</cc:attributionURL>
+    </cc:work>
+
+</rdf:RDF>
+</metadata>
+<rect id="mountain_tramway" x="0" y="0" width="32" height="32" style="fill:none;"/><clipPath id="_clip1"><rect x="0" y="0" width="32" height="32"/></clipPath><g clip-path="url(#_clip1)"><g id="outline"><path d="M19,15l6,0c0.53,0 1.039,0.211 1.414,0.586c0.375,0.375 0.586,0.884 0.586,1.414c0,2.563 0,7.029 0,10c0,1.657 -1.343,3 -3,3c-4.202,0 -11.798,0 -16,0c-1.657,0 -3,-1.343 -3,-3c0,-2.971 0,-7.437 0,-10c0,-0.53 0.211,-1.039 0.586,-1.414c0.375,-0.375 0.884,-0.586 1.414,-0.586l6,0l0,-2c0,0 1.815,0 3,0c0.265,0 0.52,-0.105 0.707,-0.293c0.188,-0.187 0.293,-0.442 0.293,-0.707c0,-1.331 0,-3.669 0,-5c0,-0.265 -0.105,-0.52 -0.293,-0.707c-0.187,-0.188 -0.442,-0.293 -0.707,-0.293l-14,0l0,-2l11,0l0,-2l6,0l0,2l11,0l0,2l-11,0l0,9Z" style="fill:none;stroke:#000;stroke-width:4px;"/></g><g id="emoji"><path d="M13,2l0,4c0,0 1.815,0 3,0c0.265,0 0.52,0.105 0.707,0.293c0.188,0.187 0.293,0.442 0.293,0.707c0,1.331 0,3.669 0,5c0,0.265 -0.105,0.52 -0.293,0.707c-0.187,0.188 -0.442,0.293 -0.707,0.293c-1.185,0 -3,0 -3,0l0,3l6,0l0,-14l-6,0Z" style="fill:#5b5b5b;"/><path d="M27,17c0,-0.53 -0.211,-1.039 -0.586,-1.414c-0.375,-0.375 -0.884,-0.586 -1.414,-0.586c-4.184,0 -13.816,0 -18,0c-0.53,0 -1.039,0.211 -1.414,0.586c-0.375,0.375 -0.586,0.884 -0.586,1.414c0,2.563 0,7.029 0,10c0,1.657 1.343,3 3,3c4.202,0 11.798,0 16,0c1.657,0 3,-1.343 3,-3c0,-2.971 0,-7.437 0,-10Z" style="fill:#999;"/><path d="M26,17c0,-0.552 -0.448,-1 -1,-1c-0.872,0 -4,0 -4,0l-1,1l-1,-1l-6,0l-1,1l-1,-1c0,0 -3.345,0 -4,0c-0.552,0 -1,0.448 -1,1c0,1.916 0,6.084 0,8c0,0.552 0.448,1 1,1c0.864,0 4,0 4,0l1,-1l1,1l6,0l1,-1l1,1c0,0 3.088,0 4,0c0.552,0 1,-0.448 1,-1c0,-1.916 0,-6.084 0,-8Z"/><rect x="2" y="4" width="28" height="2" style="fill:#3e3e3e;"/><rect x="11" y="16" width="2" height="10" style="fill:#404040;"/><rect x="19" y="16" width="2" height="10" style="fill:#404040;"/></g></g></svg>

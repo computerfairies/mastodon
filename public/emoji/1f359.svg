@@ -1,1 +1,53 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><path fill="#EEE" d="M35 26c0 9.389-7.609 9-17 9s-17 .389-17-9C1 18 9 7 14 3c2.75-2 5.129-2.051 8 0 7 5 13 18 13 23z"/><path fill="#CCD6DD" d="M27.258 29.642c-.461.316-1.091.199-1.406-.263-.316-.46-.198-1.091.262-1.406l1.67-1.144c.46-.315 1.089-.198 1.405.263.315.46.198 1.091-.263 1.405l-1.668 1.145zm2.438-7.095c-.512-.207-.758-.792-.549-1.303.209-.512.793-.758 1.304-.549l1.852.755c.511.208.757.791.549 1.303-.208.512-.792.758-1.304.549l-1.852-.755zm-4.494-5.256c-.519-.21-.767-.801-.555-1.318.209-.517.801-.766 1.316-.556l1.875.764c.516.211.765.801.554 1.318-.211.517-.8.766-1.318.555l-1.872-.763zm-21.001 7c-.517-.21-.766-.801-.554-1.318.21-.517.801-.766 1.317-.556l1.873.764c.518.211.766.801.556 1.318-.211.518-.802.767-1.318.556l-1.874-.764zm3.557-6.149c-.461.316-1.091.199-1.406-.264-.315-.46-.198-1.09.262-1.405l1.67-1.144c.46-.315 1.089-.198 1.405.263.315.46.198 1.091-.263 1.406l-1.668 1.144zm9.028 3.739c-.767-.312-1.137-1.188-.824-1.956.314-.766 1.189-1.135 1.956-.823l2.778 1.134c.767.312 1.136 1.186.824 1.953-.312.768-1.188 1.137-1.956.824l-2.778-1.132zm-6.184 6.052c.522-.199 1.106.062 1.306.586.197.519-.066 1.105-.588 1.303l-1.892.721c-.519.199-1.104-.063-1.302-.586-.2-.524.062-1.107.585-1.307l1.891-.717z"/><path fill="#292F33" d="M24 21H12c-1.104 0-2 .896-2 2v11.812c2.384.224 5.107.188 8 .188s5.616.036 8-.188V23c0-1.104-.896-2-2-2z"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+<metadata>
+<rdf:RDF xmlns:cc="http://web.resource.org/cc/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc = "http://purl.org/dc/elements/1.1/"
+         >
+
+     <rdf:Description rdf:about="">
+       <dc:title>Mutant Standard emoji v0.3.0</dc:title>
+     </rdf:Description>
+
+    <cc:work rdf:about="">
+        <cc:license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+        <cc:attributionName>Dzuk</cc:attributionName>
+        <cc:attributionURL>http://mutant.tech/</cc:attributionURL>
+    </cc:work>
+
+</rdf:RDF>
+</metadata>
+
+    <rect id="onigiri" x="0" y="0" width="32" height="32" style="fill:none;"/>
+    <g id="outline">
+        <path d="M16.011,4.038c0.001,-0.013 0.002,-0.026 0.002,-0.038c2.461,0 5.778,2.757 8,6.144c5.828,8.882 5.677,13.248 4.697,15.325c-0.581,1.035 -1.676,1.675 -2.863,1.675l-9.834,0l-0.002,-0.003l0,0.003l-9.834,0c-1.187,0 -2.282,-0.64 -2.863,-1.675c-0.981,-2.077 -1.132,-6.443 4.697,-15.325c2.222,-3.387 5.539,-6.144 8,-6.144l0,0.038Z" style="fill:none;stroke:#000;stroke-width:4px;"/>
+    </g>
+    <g id="emoji">
+        <path d="M16.011,4.038c0.001,-0.013 0.002,-0.026 0.002,-0.038c2.461,0 5.778,2.757 8,6.144c5.828,8.882 5.677,13.248 4.697,15.325c-0.581,1.035 -1.676,1.675 -2.863,1.675l-9.834,0l-0.002,-0.003l0,0.003l-9.834,0c-1.187,0 -2.282,-0.64 -2.863,-1.675c-0.981,-2.077 -1.132,-6.443 4.697,-15.325c2.222,-3.387 5.539,-6.144 8,-6.144l0,0.038Z" style="fill:#fff;"/>
+        <clipPath id="_clip1">
+            <path d="M16.011,4.038c0.001,-0.013 0.002,-0.026 0.002,-0.038c2.461,0 5.778,2.757 8,6.144c5.828,8.882 5.677,13.248 4.697,15.325c-0.581,1.035 -1.676,1.675 -2.863,1.675l-9.834,0l-0.002,-0.003l0,0.003l-9.834,0c-1.187,0 -2.282,-0.64 -2.863,-1.675c-0.981,-2.077 -1.132,-6.443 4.697,-15.325c2.222,-3.387 5.539,-6.144 8,-6.144l0,0.038Z"/>
+        </clipPath>
+        <g clip-path="url(#_clip1)">
+            <g>
+                <path d="M20,12l-2,2" style="fill:none;stroke:#e1e1e1;stroke-width:2px;"/>
+                <path d="M9,13l-2,2" style="fill:none;stroke:#e1e1e1;stroke-width:2px;"/>
+                <path d="M20,19l-2,2" style="fill:none;stroke:#e1e1e1;stroke-width:2px;"/>
+                <path d="M27,12l-2,2" style="fill:none;stroke:#e1e1e1;stroke-width:2px;"/>
+                <path d="M29,20l-2,2" style="fill:none;stroke:#e1e1e1;stroke-width:2px;"/>
+                <path d="M18,6l-2,2" style="fill:none;stroke:#e1e1e1;stroke-width:2px;"/>
+                <path d="M10,20l-2,2" style="fill:none;stroke:#e1e1e1;stroke-width:2px;"/>
+                <path d="M13,11l-2,-2" style="fill:none;stroke:#e1e1e1;stroke-width:2px;"/>
+                <path d="M13,5l-2,-2" style="fill:none;stroke:#e1e1e1;stroke-width:2px;"/>
+                <path d="M24,18l-2,-2" style="fill:none;stroke:#e1e1e1;stroke-width:2px;"/>
+                <path d="M24,9l-2,-2" style="fill:none;stroke:#e1e1e1;stroke-width:2px;"/>
+                <path d="M25,26l-2,-2" style="fill:none;stroke:#e1e1e1;stroke-width:2px;"/>
+                <path d="M14,18l-2,-2" style="fill:none;stroke:#e1e1e1;stroke-width:2px;"/>
+                <path d="M4,20l-2,-2" style="fill:none;stroke:#e1e1e1;stroke-width:2px;"/>
+                <path d="M7,28l-2,-2" style="fill:none;stroke:#e1e1e1;stroke-width:2px;"/>
+            </g>
+        </g>
+        <path d="M24,19c0,-0.53 -0.211,-1.039 -0.586,-1.414c-0.375,-0.375 -0.884,-0.586 -1.414,-0.586c-3.074,0 -8.926,0 -12,0c-0.53,0 -1.039,0.211 -1.414,0.586c-0.375,0.375 -0.586,0.884 -0.586,1.414c0,3.172 0,9 0,9l16,0c0,0 0,-5.828 0,-9Z"/>
+    </g>
+</svg>

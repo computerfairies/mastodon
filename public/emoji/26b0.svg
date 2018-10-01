@@ -1,1 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><path fill="#C1694F" d="M31 12l-1.412 10.235L7.353 36 5 28z"/><path fill="#662113" d="M1 22v7.647L7.353 36v-8z"/><path fill="#A04E3C" d="M34 5v7.706l-4.412 9.529V15L31 9z"/><path fill="#D99E82" d="M34 5l-4.412 9.824L7.353 28.588 1 22 17.941 2.118 28.529 0z"/><path fill="#FFAC33" d="M12.001 30c-.323 0-.64-.156-.833-.445-.306-.46-.182-1.08.277-1.387l3-2c.459-.307 1.08-.183 1.387.277.306.46.182 1.08-.277 1.387l-3 2c-.171.113-.364.168-.554.168zm11-7c-.323 0-.641-.156-.833-.445-.307-.46-.183-1.08.277-1.387l3-2c.461-.306 1.08-.182 1.387.277.307.46.183 1.08-.277 1.387l-3 2c-.171.113-.364.168-.554.168z"/><path fill="#C1694F" d="M9 25c-.258 0-.514-.1-.708-.293l-3-3c-.382-.382-.392-.997-.022-1.391l15-16c.15-.16.349-.266.565-.302l6-1c.315-.054.642.05.871.279l2 2c.284.283.371.707.223 1.079l-2 5c-.07.176-.189.328-.343.439l-18 13C9.41 24.938 9.205 25 9 25zm-1.608-4.022l1.713 1.713L26.18 10.359l1.646-4.119-1.169-1.17-5.159.86L7.392 20.978z"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+<metadata>
+<rdf:RDF xmlns:cc="http://web.resource.org/cc/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc = "http://purl.org/dc/elements/1.1/"
+         >
+
+     <rdf:Description rdf:about="">
+       <dc:title>Mutant Standard emoji v0.3.0</dc:title>
+     </rdf:Description>
+
+    <cc:work rdf:about="">
+        <cc:license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+        <cc:attributionName>Dzuk</cc:attributionName>
+        <cc:attributionURL>http://mutant.tech/</cc:attributionURL>
+    </cc:work>
+
+</rdf:RDF>
+</metadata>
+
+    <rect id="coffin" x="0" y="0" width="32" height="32" style="fill:none;"/>
+    <clipPath id="_clip1">
+        <rect x="0" y="0" width="32" height="32"/>
+    </clipPath>
+    <g clip-path="url(#_clip1)">
+        <g id="outline">
+            <path d="M26.096,9.72l-4.478,22.28l-11.279,0l-4.434,-22.282l4.859,-9.718l10.472,0l4.86,9.72Z" style="fill-rule:nonzero;"/>
+        </g>
+        <g id="emoji">
+            <path d="M12,2l8,0l4,8l-4.02,20l-8,0l-3.98,-20l4,-8Z" style="fill:#7f522f;"/>
+            <rect x="15" y="6" width="2" height="5" style="fill:#fbc546;"/>
+        </g>
+    </g>
+</svg>
