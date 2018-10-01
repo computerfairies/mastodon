@@ -1,7 +1,7 @@
 {
   "sources": [
     {
-      "folder": "mutstd-svg",
+      "folder": "svg/mutstd",
       "format": "svg",
       "filename": "{codepoint}.svg",
       "type": "non_qualified",
@@ -9,7 +9,7 @@
       "lowercase": true
     },
     {
-      "folder": "blobmoji-svg",
+      "folder": "svg/blobmoji",
       "format": "svg",
       "filename": "emoji_u{codepoint}.svg",
       "replace": {
@@ -20,7 +20,7 @@
       "lowercase": true
     },
     {
-      "folder": "twemoji-svg",
+      "folder": "svg/twemoji",
       "format": "svg",
       "filename": "{codepoint}.svg",
       "type": "non_qualified",

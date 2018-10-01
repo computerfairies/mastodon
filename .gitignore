@@ -58,3 +58,5 @@ yarn-debug.log
 # Ignore Docker option files
 docker-compose.override.yml
 
+# emoji packs
+emoji_tools/svg/
