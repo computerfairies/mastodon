@@ -1,1 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><path fill="#3B88C3" d="M36 32c0 2.209-1.791 4-4 4H4c-2.209 0-4-1.791-4-4V4c0-2.209 1.791-4 4-4h28c2.209 0 4 1.791 4 4v28z"/><path fill="#FFF" d="M22.242 22.242l2.829 2.829c-3.905 3.905-10.237 3.904-14.143-.001-2.247-2.246-3.194-5.296-2.854-8.225l-4.037.367c-.215 3.84 1.128 7.752 4.062 10.687 5.467 5.467 14.333 5.468 19.799 0l2.828 2.828.849-9.334-9.333.849zM27.899 8.1C22.431 2.633 13.568 2.633 8.1 8.1L5.272 5.272l-.849 9.334 9.334-.849-2.829-2.829c3.906-3.905 10.236-3.905 14.142 0 2.248 2.247 3.194 5.297 2.856 8.226l4.036-.366c.216-3.841-1.128-7.753-4.063-10.688z"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+<metadata>
+<rdf:RDF xmlns:cc="http://web.resource.org/cc/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc = "http://purl.org/dc/elements/1.1/"
+         >
+
+     <rdf:Description rdf:about="">
+       <dc:title>Mutant Standard emoji v0.3.0</dc:title>
+     </rdf:Description>
+
+    <cc:work rdf:about="">
+        <cc:license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+        <cc:attributionName>Dzuk</cc:attributionName>
+        <cc:attributionURL>http://mutant.tech/</cc:attributionURL>
+    </cc:work>
+
+</rdf:RDF>
+</metadata>
+<rect id="arrows_counterclockwise" x="0" y="0" width="32" height="32" style="fill:none;"/><clipPath id="_clip1"><rect x="0" y="0" width="32" height="32"/></clipPath><g clip-path="url(#_clip1)"><g id="outline"><path d="M0,24c0,4.418 3.582,8 8,8c4.887,0 11.113,0 16,0c4.418,0 8,-3.582 8,-8c0,-4.887 0,-11.113 0,-16c0,-4.418 -3.582,-8 -8,-8c-4.887,0 -11.113,0 -16,0c-4.418,0 -8,3.582 -8,8c0,4.887 0,11.113 0,16Z"/></g><g id="emoji"><path d="M30,24c0,1.591 -0.632,3.117 -1.757,4.243c-1.126,1.125 -2.652,1.757 -4.243,1.757c-4.724,0 -11.276,0 -16,0c-1.591,0 -3.117,-0.632 -4.243,-1.757c-1.125,-1.126 -1.757,-2.652 -1.757,-4.243c0,-4.724 0,-11.276 0,-16c0,-1.591 0.632,-3.117 1.757,-4.243c1.126,-1.125 2.652,-1.757 4.243,-1.757c4.724,0 11.276,0 16,0c1.591,0 3.117,0.632 4.243,1.757c1.125,1.126 1.757,2.652 1.757,4.243c0,4.724 0,11.276 0,16Z" style="fill:#666;"/><path d="M23.07,23.07c-1.81,1.81 -4.31,2.93 -7.07,2.93c-5.182,0 -9.448,-3.95 -9.95,-9l3.021,0c0.486,3.39 3.405,6 6.929,6c1.932,0 3.682,-0.784 4.949,-2.051l-2.949,-2.949l8,0l0,8l-2.93,-2.93Zm-14.14,-14.14c1.81,-1.81 4.31,-2.93 7.07,-2.93c5.182,0 9.448,3.95 9.95,9l-3.021,0c-0.486,-3.39 -3.405,-6 -6.929,-6c-1.932,0 -3.682,0.784 -4.949,2.051l2.949,2.949l-8,0l0,-8l2.93,2.93Z" style="fill:#fff;"/></g></g></svg>

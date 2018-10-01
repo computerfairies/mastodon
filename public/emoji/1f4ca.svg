@@ -1,1 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><path fill="#CCD6DD" d="M31 2H5C3.343 2 2 3.343 2 5v26c0 1.657 1.343 3 3 3h26c1.657 0 3-1.343 3-3V5c0-1.657-1.343-3-3-3z"/><path fill="#E1E8ED" d="M31 1H5C2.791 1 1 2.791 1 5v26c0 2.209 1.791 4 4 4h26c2.209 0 4-1.791 4-4V5c0-2.209-1.791-4-4-4zm0 2c1.103 0 2 .897 2 2v4h-6V3h4zm-4 16h6v6h-6v-6zm0-2v-6h6v6h-6zM25 3v6h-6V3h6zm-6 8h6v6h-6v-6zm0 8h6v6h-6v-6zM17 3v6h-6V3h6zm-6 8h6v6h-6v-6zm0 8h6v6h-6v-6zM3 5c0-1.103.897-2 2-2h4v6H3V5zm0 6h6v6H3v-6zm0 8h6v6H3v-6zm2 14c-1.103 0-2-.897-2-2v-4h6v6H5zm6 0v-6h6v6h-6zm8 0v-6h6v6h-6zm12 0h-4v-6h6v4c0 1.103-.897 2-2 2z"/><path fill="#5C913B" d="M13 33H7V16c0-1.104.896-2 2-2h2c1.104 0 2 .896 2 2v17z"/><path fill="#3B94D9" d="M29 33h-6V9c0-1.104.896-2 2-2h2c1.104 0 2 .896 2 2v24z"/><path fill="#DD2E44" d="M21 33h-6V23c0-1.104.896-2 2-2h2c1.104 0 2 .896 2 2v10z"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+<metadata>
+<rdf:RDF xmlns:cc="http://web.resource.org/cc/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc = "http://purl.org/dc/elements/1.1/"
+         >
+
+     <rdf:Description rdf:about="">
+       <dc:title>Mutant Standard emoji v0.3.0</dc:title>
+     </rdf:Description>
+
+    <cc:work rdf:about="">
+        <cc:license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+        <cc:attributionName>Dzuk</cc:attributionName>
+        <cc:attributionURL>http://mutant.tech/</cc:attributionURL>
+    </cc:work>
+
+</rdf:RDF>
+</metadata>
+<rect id="bar_chart" x="0" y="0" width="32" height="32" style="fill:none;"/><clipPath id="_clip1"><rect x="0" y="0" width="32" height="32"/></clipPath><g clip-path="url(#_clip1)"><g id="outline"><rect x="0" y="0" width="32" height="32" style="fill-rule:nonzero;"/></g><g id="emoji"><rect x="2" y="2" width="28" height="28" style="fill:#fff;"/><g><rect x="8" y="4" width="1" height="24" style="fill:#e6e6e6;"/><rect x="12" y="4" width="1" height="24" style="fill:#e6e6e6;"/><rect x="16" y="4" width="1" height="24" style="fill:#e6e6e6;"/><rect x="20" y="4" width="1" height="24" style="fill:#e6e6e6;"/><rect x="24" y="4" width="1" height="24" style="fill:#e6e6e6;"/><path d="M28,8l0,-1l-24,0l0,1l24,0Z" style="fill:#e6e6e6;"/><path d="M28,12l0,-1l-24,0l0,1l24,0Z" style="fill:#e6e6e6;"/><path d="M28,16l0,-1l-24,0l0,1l24,0Z" style="fill:#e6e6e6;"/><path d="M28,20l0,-1l-24,0l0,1l24,0Z" style="fill:#e6e6e6;"/><path d="M28,24l0,-1l-24,0l0,1l24,0Z" style="fill:#e6e6e6;"/></g><g><rect x="4" y="4" width="1" height="24" style="fill:#b3b3b3;"/><path d="M28,28l0,-1l-24,0l0,1l24,0Z" style="fill:#b3b3b3;"/></g><rect x="5" y="16" width="5" height="11" style="fill:#219555;"/><rect x="11" y="8" width="5" height="19" style="fill:#d72d35;"/><rect x="17" y="16" width="5" height="11" style="fill:#5462cb;"/><rect x="23" y="20" width="5" height="7" style="fill:#e48a1b;"/></g></g></svg>

@@ -1,1 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><path fill="#FDD888" d="M2 6C0 6 0 8 0 8v20s0 2 2 2h32c2 0 2-2 2-2V8s0-2-2-2H2z"/><path fill="#9AAAB4" d="M13 6h10v24.062H13z"/><path fill="#67757F" d="M5.743 18.143H3.369c-.398 0-.709-.189-.709-.57 0-.383.312-.573.709-.573h1.664l-2.772-4.28c-.174-.26-.261-.45-.261-.693 0-.33.33-.573.607-.573.278 0 .554.122.797.485l3.102 4.662 3.102-4.662c.243-.364.52-.485.797-.485.276 0 .605.243.605.573 0 .243-.086.432-.259.691l-2.772 4.28h1.664c.399 0 .711.191.711.573 0 .381-.312.57-.711.57H7.269v1.23h2.373c.399 0 .711.192.711.573 0 .381-.312.571-.711.571H7.269v2.668c0 .504-.312.817-.764.817-.451 0-.762-.313-.762-.815v-2.668H3.369c-.398 0-.709-.19-.709-.571 0-.381.312-.573.709-.573h2.375v-1.23z"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-miterlimit:1.5;">
+<metadata>
+<rdf:RDF xmlns:cc="http://web.resource.org/cc/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc = "http://purl.org/dc/elements/1.1/"
+         >
+
+     <rdf:Description rdf:about="">
+       <dc:title>Mutant Standard emoji v0.3.0</dc:title>
+     </rdf:Description>
+
+    <cc:work rdf:about="">
+        <cc:license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+        <cc:attributionName>Dzuk</cc:attributionName>
+        <cc:attributionURL>http://mutant.tech/</cc:attributionURL>
+    </cc:work>
+
+</rdf:RDF>
+</metadata>
+<rect id="yellow_money" x="0" y="0" width="32" height="32" style="fill:none;"/><g id="outline"><rect x="0" y="5" width="32" height="22"/></g><g id="emoji"><path d="M30,7l-28,0l0,15l1,1l26,0l1,-1l0,-15Z" style="fill:#bcc26b;"/><rect x="2" y="22" width="28" height="3" style="fill:#99a645;"/><path d="M24,12c0,-0.552 -0.448,-1 -1,-1c-0.871,0 -2.129,0 -3,0c-0.552,0 -1,0.448 -1,1c0,0.322 0,0.678 0,1c0,0.552 0.448,1 1,1c0.871,0 2.129,0 3,0c0.552,0 1,-0.448 1,-1c0,-0.322 0,-0.678 0,-1Z" style="fill:#808537;"/><path d="M24,16c0,-0.552 -0.448,-1 -1,-1c-0.871,0 -2.129,0 -3,0c-0.552,0 -1,0.448 -1,1c0,0.322 0,0.678 0,1c0,0.552 0.448,1 1,1c0.871,0 2.129,0 3,0c0.552,0 1,-0.448 1,-1c0,-0.322 0,-0.678 0,-1Z" style="fill:#808537;"/><path d="M12.958,11l1.042,0l0,2l1,0l0,1l-1,0l0,1l1,0l0,1l-1,0l0,2l-1,0l0,-2l-1.042,0l-0.729,1.75l-0.458,0l-0.729,-1.75l-1.042,0l0,2l-1,0l0,-2l-1,0l0,-1l1,0l0,-1l-1,0l0,-1l1,0l0,-2l1.042,0l0.833,2l2.25,0l0.833,-2Zm-3.75,3l-0.208,0l0,1l0.625,0l-0.417,-1Zm2.5,0l-1.416,0l0.416,1l0.584,0l0.416,-1Zm1.292,0l-0.208,0l-0.417,1l0.625,0l0,-1Z" style="fill:#fff;"/><path d="M20,7l-8,0l0,15l1,1l6,0l1,-1l0,-15Z" style="fill:#ededed;"/><rect x="12" y="22" width="8" height="3" style="fill:#bdbdbd;"/><path d="M25,10c0,0 0.771,-0.771 1.207,-1.207c0.188,-0.188 0.442,-0.293 0.707,-0.293c0.586,0 1.586,0 1.586,0c0,0 0,1 0,1.586c0,0.265 -0.105,0.519 -0.293,0.707c-0.436,0.436 -1.207,1.207 -1.207,1.207" style="fill:none;stroke:#808537;stroke-width:1px;"/><path d="M7,10c0,0 -0.771,-0.771 -1.207,-1.207c-0.188,-0.188 -0.442,-0.293 -0.707,-0.293c-0.586,0 -1.586,0 -1.586,0c0,0 0,1 0,1.586c0,0.265 0.105,0.519 0.293,0.707c0.436,0.436 1.207,1.207 1.207,1.207" style="fill:none;stroke:#808537;stroke-width:1px;"/><path d="M25,19c0,0 0.771,0.771 1.207,1.207c0.188,0.188 0.442,0.293 0.707,0.293c0.586,0 1.586,0 1.586,0c0,0 0,-1 0,-1.586c0,-0.265 -0.105,-0.519 -0.293,-0.707c-0.436,-0.436 -1.207,-1.207 -1.207,-1.207" style="fill:none;stroke:#808537;stroke-width:1px;"/><path d="M7,19c0,0 -0.771,0.771 -1.207,1.207c-0.188,0.188 -0.442,0.293 -0.707,0.293c-0.586,0 -1.586,0 -1.586,0c0,0 0,-1 0,-1.586c0,-0.265 0.105,-0.519 0.293,-0.707c0.436,-0.436 1.207,-1.207 1.207,-1.207" style="fill:none;stroke:#808537;stroke-width:1px;"/></g></svg>

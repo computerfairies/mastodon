@@ -1,1 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><path fill="#77B255" d="M36 32c0 2.209-1.791 4-4 4H4c-2.209 0-4-1.791-4-4V4c0-2.209 1.791-4 4-4h28c2.209 0 4 1.791 4 4v28z"/><path fill="#FFF" d="M31.999 16h-9.171l6.899-6.899c.781-.781.782-2.047.001-2.828-.782-.782-2.048-.781-2.829 0L20 13.172V4c0-1.104-.896-2-2-2s-2 .896-2 2v9.171L9.101 6.272c-.781-.781-2.048-.781-2.828 0-.781.781-.781 2.047 0 2.828l6.9 6.9H4c-1.104 0-2.001.896-2 2 0 1.104.896 2 1.999 2h9.174l-6.9 6.9c-.781.78-.781 2.047 0 2.828.78.78 2.047.78 2.827 0l6.9-6.9V32c0 1.104.896 2 2 2s2-.896 2-2v-9.172l6.899 6.899c.781.781 2.047.782 2.828.001.781-.781.781-2.048 0-2.829L22.828 20h9.171C33.104 20 34 19.105 34 18.001 34 16.896 33.104 16 31.999 16z"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+<metadata>
+<rdf:RDF xmlns:cc="http://web.resource.org/cc/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc = "http://purl.org/dc/elements/1.1/"
+         >
+
+     <rdf:Description rdf:about="">
+       <dc:title>Mutant Standard emoji v0.3.0</dc:title>
+     </rdf:Description>
+
+    <cc:work rdf:about="">
+        <cc:license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+        <cc:attributionName>Dzuk</cc:attributionName>
+        <cc:attributionURL>http://mutant.tech/</cc:attributionURL>
+    </cc:work>
+
+</rdf:RDF>
+</metadata>
+
+    <rect id="_8_asterisk" serif:id="8_asterisk" x="0" y="0" width="32" height="32" style="fill:none;"/>
+    <clipPath id="_clip1">
+        <rect x="0" y="0" width="32" height="32"/>
+    </clipPath>
+    <g clip-path="url(#_clip1)">
+        <g id="outline">
+            <path d="M32,8c0,-4.418 -3.582,-8 -8,-8c-4.887,0 -11.113,0 -16,0c-4.418,0 -8,3.582 -8,8c0,4.887 0,11.113 0,16c0,4.418 3.582,8 8,8c4.887,0 11.113,0 16,0c4.418,0 8,-3.582 8,-8c0,-4.887 0,-11.113 0,-16Z"/>
+        </g>
+        <g id="emoji">
+            <path d="M30,8c0,-1.591 -0.632,-3.117 -1.757,-4.243c-1.126,-1.125 -2.652,-1.757 -4.243,-1.757c-4.724,0 -11.276,0 -16,0c-1.591,0 -3.117,0.632 -4.243,1.757c-1.125,1.126 -1.757,2.652 -1.757,4.243c0,4.724 0,11.276 0,16c0,1.591 0.632,3.117 1.757,4.243c1.126,1.125 2.652,1.757 4.243,1.757c4.724,0 11.276,0 16,0c1.591,0 3.117,-0.632 4.243,-1.757c1.125,-1.126 1.757,-2.652 1.757,-4.243c0,-4.724 0,-11.276 0,-16Z" style="fill:#199d4e;"/>
+            <path d="M17.5,12.379l4.51,-4.511c0.708,0.707 1.415,1.414 2.122,2.122l-4.511,4.51l6.379,0c0,1 0,2 0,3l-6.379,0l4.511,4.51l-2.122,2.122l-4.51,-4.511l0,6.379l-3,0l0,-6.379l-4.51,4.511l-2.122,-2.122l4.511,-4.51l-6.379,0l0,-3l6.379,0l-4.511,-4.51l2.122,-2.122l4.51,4.511l0,-6.379l3,0l0,6.379Z" style="fill:#fff;"/>
+        </g>
+    </g>
+</svg>

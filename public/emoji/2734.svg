@@ -1,1 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><path fill="#292F33" d="M13.574 11.235c1.335.971 2.631.43 2.882-1.201l1.088-7.069c.251-1.631.661-1.631.912 0l1.088 7.069c.251 1.631 1.548 2.171 2.882 1.201l6.148-4.471c1.334-.971 1.632-.673.661.662l-4.471 6.147c-.971 1.335-.431 2.631 1.2 2.882l7.07 1.088c1.631.251 1.631.661 0 .912l-7.07 1.088c-1.631.251-2.171 1.548-1.2 2.882l4.471 6.148c.971 1.334.673 1.632-.661.661l-6.148-4.471c-1.334-.971-2.631-.431-2.882 1.2l-1.088 7.07c-.251 1.631-.661 1.631-.912 0l-1.088-7.07c-.251-1.631-1.548-2.171-2.882-1.2l-6.147 4.471c-1.334.971-1.581.713-.546-.573l5.085-6.324c1.034-1.286.542-2.523-1.092-2.748l-8.057-1.113c-1.634-.226-1.638-.62-.008-.876l7.228-1.135c1.63-.256 2.17-1.558 1.199-2.892L6.765 7.426c-.971-1.334-.673-1.632.661-.661l6.148 4.47z"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+<metadata>
+<rdf:RDF xmlns:cc="http://web.resource.org/cc/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc = "http://purl.org/dc/elements/1.1/"
+         >
+
+     <rdf:Description rdf:about="">
+       <dc:title>Mutant Standard emoji v0.3.0</dc:title>
+     </rdf:Description>
+
+    <cc:work rdf:about="">
+        <cc:license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+        <cc:attributionName>Dzuk</cc:attributionName>
+        <cc:attributionURL>http://mutant.tech/</cc:attributionURL>
+    </cc:work>
+
+</rdf:RDF>
+</metadata>
+
+    <rect id="_8_star" serif:id="8_star" x="0" y="0" width="32" height="32" style="fill:none;"/>
+    <clipPath id="_clip1">
+        <rect x="0" y="0" width="32" height="32"/>
+    </clipPath>
+    <g clip-path="url(#_clip1)">
+        <g id="outline">
+            <path d="M32,8c0,-4.418 -3.582,-8 -8,-8c-4.887,0 -11.113,0 -16,0c-4.418,0 -8,3.582 -8,8c0,4.887 0,11.113 0,16c0,4.418 3.582,8 8,8c4.887,0 11.113,0 16,0c4.418,0 8,-3.582 8,-8c0,-4.887 0,-11.113 0,-16Z"/>
+        </g>
+        <g id="emoji">
+            <path d="M30,8c0,-1.591 -0.632,-3.117 -1.757,-4.243c-1.126,-1.125 -2.652,-1.757 -4.243,-1.757c-4.724,0 -11.276,0 -16,0c-1.591,0 -3.117,0.632 -4.243,1.757c-1.125,1.126 -1.757,2.652 -1.757,4.243c0,4.724 0,11.276 0,16c0,1.591 0.632,3.117 1.757,4.243c1.126,1.125 2.652,1.757 4.243,1.757c4.724,0 11.276,0 16,0c1.591,0 3.117,-0.632 4.243,-1.757c1.125,-1.126 1.757,-2.652 1.757,-4.243c0,-4.724 0,-11.276 0,-16Z" style="fill:#ef9b00;"/>
+            <path d="M16,4l1.754,7.765l6.731,-4.25l-4.25,6.731l7.765,1.754l-7.765,1.754l4.25,6.731l-6.731,-4.25l-1.754,7.765l-1.754,-7.765l-6.731,4.25l4.25,-6.731l-7.765,-1.754l7.765,-1.754l-4.25,-6.731l6.731,4.25l1.754,-7.765Z" style="fill:#fff;"/>
+        </g>
+    </g>
+</svg>

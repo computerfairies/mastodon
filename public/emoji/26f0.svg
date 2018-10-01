@@ -1,1 +1,39 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><path fill="#292F33" d="M19.083 35.5L12.25 12.292s-1.42.761-2.604 1.637c-.313.231-1.977 2.79-2.312 3.04-1.762 1.315-3.552 2.841-3.792 3.167C3.083 20.76 0 36 0 36l19.083-.5z"/><path fill="#4B545D" d="M26.5 15.25l-7.312-9.212L18 2.25l-5.373 6.484-.971 1.172C11.25 10.688 10 15.25 10 15.25L8.75 20 3.252 30.054.917 34.791 32 35l-5.5-19.75z"/><path fill="#292F33" d="M12 34h2l2-15.75 1.234-1.797 3.578-5.234.094-1.469-3.287 4.454L15 17.752l-2.388 7.362L12 27l-1.791 3.134L8 34zm12.059-17.616l-1.965 5.897L21 26l2.792 7.625 3.552-.062S23 26.625 23 26c0-.12.625-2.687.625-2.687l1.094-4.531L25 17.25l-.941-.866z"/><path fill="#292F33" d="M36 36s-.384-3.845-.854-7.083c0 0-.146-3.885-1.271-5.167-1.049-1.195-2.624-1.875-2.833-1.962l-1.229-3.523L27.953 13l-2.422-2.125-1.844-1.626-.505-.621L18 2.25l2.289 7.299.524 1.67 3.246 5.165.66 2.397 1.438 2.281.774 2.701L28 27.5 26 34l10 2z"/><path fill="#5C903F" d="M33.708 32.438c-1.345 0-4.958.562-5.458.562-2 0-4.25-1.75-5.25-1.75S19.406 33 17.406 33c-1.688 0-2.406-.812-4.719-.812-.748 0-4.096.871-4.812.781C6.052 32.741 5.115 32 4.656 32 2 32 0 36 0 36h36s-.875-3.562-2.292-3.562z"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+<metadata>
+<rdf:RDF xmlns:cc="http://web.resource.org/cc/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc = "http://purl.org/dc/elements/1.1/"
+         >
+
+     <rdf:Description rdf:about="">
+       <dc:title>Mutant Standard emoji v0.3.0</dc:title>
+     </rdf:Description>
+
+    <cc:work rdf:about="">
+        <cc:license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+        <cc:attributionName>Dzuk</cc:attributionName>
+        <cc:attributionURL>http://mutant.tech/</cc:attributionURL>
+    </cc:work>
+
+</rdf:RDF>
+</metadata>
+
+    <rect id="mountain" x="0" y="0" width="32" height="32" style="fill:none;"/>
+    <clipPath id="_clip1">
+        <rect x="0" y="0" width="32" height="32"/>
+    </clipPath>
+    <g clip-path="url(#_clip1)">
+        <g id="outline">
+            <rect x="0" y="0" width="32" height="32"/>
+        </g>
+        <g id="emoji">
+            <path d="M30,2l-28,0l0,7l1,1l26,0l1,-1l0,-7Z" style="fill:#4d83ef;"/>
+            <path d="M30,16l-1,1l-26,0l-1,-1l0,-7l28,0l0,7Z" style="fill:#6898f7;"/>
+            <path d="M2,20.5l0,-4.5l6,0l-6,4.5Zm21.5,-4.5l6.5,0l0,3l-5,-2l-1.5,-1Z" style="fill:#85acf9;"/>
+            <path d="M2,22.303l0,-1.803l3,-4.5l6,-5l4,-5l5,3l5,6l3,2l2,2l0,2l-1,6l-25,0l-2,-4.697Z" style="fill:#b49d6b;"/>
+            <path d="M2,22.303l2.876,-4.315l-0.876,7.012l6,-5l2,-2l3,2l1,5l3,-5l0,-3l4,2l1,3l3,3l0,-2l2,3l0,-6l1,1l0,9l-28,0l0,-7.697Z" style="fill:#5e6b36;"/>
+        </g>
+    </g>
+</svg>

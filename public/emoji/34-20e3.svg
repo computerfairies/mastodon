@@ -1,1 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><path fill="#3B88C3" d="M36 32c0 2.209-1.791 4-4 4H4c-2.209 0-4-1.791-4-4V4c0-2.209 1.791-4 4-4h28c2.209 0 4 1.791 4 4v28z"/><path fill="#FFF" d="M10.769 24.132c-1.519 0-2.17-1.022-2.17-1.829 0-.682.248-1.055.434-1.364L15.979 8.35c.682-1.24 1.55-1.798 3.162-1.798 1.799 0 3.566 1.147 3.566 3.969v9.519h.527c1.209 0 2.17.807 2.17 2.047 0 1.24-.961 2.046-2.17 2.046h-.527v2.636c0 1.644-.651 2.418-2.232 2.418-1.581 0-2.233-.774-2.233-2.418v-2.636h-7.473zm7.473-12.743h-.062l-4.186 8.65h4.248v-8.65z"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+<metadata>
+<rdf:RDF xmlns:cc="http://web.resource.org/cc/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc = "http://purl.org/dc/elements/1.1/"
+         >
+
+     <rdf:Description rdf:about="">
+       <dc:title>Mutant Standard emoji v0.3.0</dc:title>
+     </rdf:Description>
+
+    <cc:work rdf:about="">
+        <cc:license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+        <cc:attributionName>Dzuk</cc:attributionName>
+        <cc:attributionURL>http://mutant.tech/</cc:attributionURL>
+    </cc:work>
+
+</rdf:RDF>
+</metadata>
+<rect id="_4" serif:id="4" x="0" y="0" width="32" height="32" style="fill:none;"/><clipPath id="_clip1"><rect x="0" y="0" width="32" height="32"/></clipPath><g clip-path="url(#_clip1)"><g id="outline"><path d="M32,8c0,-4.418 -3.582,-8 -8,-8c-4.887,0 -11.113,0 -16,0c-4.418,0 -8,3.582 -8,8c0,4.887 0,11.113 0,16c0,4.418 3.582,8 8,8c4.887,0 11.113,0 16,0c4.418,0 8,-3.582 8,-8c0,-4.887 0,-11.113 0,-16Z"/></g><g id="emoji"><path d="M30,21l-28,0c0,0 0,1.348 0,3c0,3.314 2.686,6 6,6c4.724,0 11.276,0 16,0c3.314,0 6,-2.686 6,-6c0,-1.652 0,-3 0,-3Z" style="fill:#b2b2b2;"/><path d="M30,8c0,-3.314 -2.686,-6 -6,-6c-4.724,0 -11.276,0 -16,0c-1.591,0 -3.117,0.632 -4.243,1.757c-1.125,1.126 -1.757,2.652 -1.757,4.243c0,3.665 0,8.335 0,12c0,3.314 2.686,6 6,6c4.724,0 11.276,0 16,0c1.591,0 3.117,-0.632 4.243,-1.757c1.125,-1.126 1.757,-2.652 1.757,-4.243c0,-3.665 0,-8.335 0,-12Z" style="fill:#fff;"/><path d="M22.246,19.79l-1.553,0l0,2.71l-3.227,0l0,-2.71l-7.712,0l0,-2.833l5.445,-11.457l3.302,0l-5.47,11.457l4.435,0l0,-3.992l3.227,0l0,3.992l1.553,0l0,2.833Z" style="fill:#333;fill-rule:nonzero;"/></g></g></svg>
