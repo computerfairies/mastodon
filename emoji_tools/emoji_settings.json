@@ -1,0 +1,38 @@
+{
+  "sources": [
+    {
+      "folder": "mutstd-svg",
+      "format": "svg",
+      "filename": "{codepoint}.svg",
+      "type": "non_qualified",
+      "leading_zero": false,
+      "lowercase": true
+    },
+    {
+      "folder": "blobmoji-svg",
+      "format": "svg",
+      "filename": "emoji_u{codepoint}.svg",
+      "replace": {
+        "-": "_"
+      },
+      "type": "non_qualified",
+      "leading_zero": true,
+      "lowercase": true
+    },
+    {
+      "folder": "twemoji-svg",
+      "format": "svg",
+      "filename": "{codepoint}.svg",
+      "type": "non_qualified",
+      "leading_zero": false,
+      "lowercase": true
+    }
+  ],
+  "settings": {
+    "input": "emoji_pretty.json",
+    "size": 32,
+    "destination": "../public/emoji",
+    "sheet": "sheet_10.png",
+    "copy_sources": true
+  }
+}
