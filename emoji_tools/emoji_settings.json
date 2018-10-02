@@ -29,7 +29,8 @@
     }
   ],
   "settings": {
-    "input": "emoji_pretty.json",
+    "copy_input": "../app/javascript/mastodon/features/emoji/emoji_map.json",
+    "sprite_input": "emoji_pretty.json",
     "size": 32,
     "destination": "../public/emoji",
     "sheet": "sheet_10.png",
