@@ -8,26 +8,15 @@ with open('emoji_settings.json') as f:
   settings = data['settings']
   sources = data['sources']
 
-with open(settings['input']) as f:
+with open(settings['sprite_input']) as f:
   emoji_map = json.load(f)
 
-count_found = 0
-count_missing = 0
-missing = []
+with open(settings['copy_input']) as f:
+  copy_map = json.load(f)
 
-# iterate over every emoji in map file
-for emoji in emoji_map:
-  print(emoji['name'])
-  found = False
-
+def find_codepoint(codepoint):
   # check each source in order for emoji
   for source in sources:
-    # what field in emoji map to search for
-    source_type = source['type']
-    codepoint = emoji[source_type]
-    if codepoint == None:
-      codepoint = emoji['unified']
-
     codepoint_original = codepoint
 
     # replace to match source filename
@@ -48,23 +37,58 @@ for emoji in emoji_map:
       pass
     filename = os.path.join(source['folder'], source['filename'].replace("{codepoint}", codepoint))
 
-    # source found, copy emoji over and add it to the sheet
+    # source found
     if os.path.exists(filename):
-      # debug
-      print(filename)
-      found = True
-      count_found += 1
-      if settings['copy_sources']:
-        shutil.copy2(filename, os.path.join(settings['destination'], codepoint_original.lower().lstrip('0') + '.svg'))
-      break
+      return filename
+  
+  return None
 
-  # source not found, warn
-  if not found:
-    count_missing += 1
-    missing += [emoji['unified']]
-    print("!! NOT FOUND! !!")
+# EMOJI FILES STUFF
+def do_files():
+  count_found = 0
+  count_missing = 0
+  missing = []
 
-print("found: {:d}".format(count_found))
-print("missing: {:d}".format(count_missing))
-if count_missing:
-  print(missing)
+  # iterate over every emoji in map file
+  for emoji in copy_map.items():
+    #print(emoji[1])
+    codepoint = emoji[1]
+
+    if codepoint == None:
+      continue
+
+    filename = find_codepoint(codepoint)
+    
+    if filename != None:
+      count_found = count_found + 1
+      shutil.copy2(filename, os.path.join(settings['destination'], codepoint + '.svg'))
+    else:
+      count_missing += 1
+      missing += [codepoint]
+      #print("!! NOT FOUND! !!")
+  
+  print("found: {:d}".format(count_found))
+  print("missing: {:d}".format(count_missing))
+  if count_missing:
+    print(missing)
+
+# SPRITESHEET STUFF
+def do_spritesheet():
+  # iterate over every emoji in map file
+  for emoji in emoji_map:
+    print(emoji['name'])
+
+    # try unified then non qualified
+    filename = find_codepoint('unified')
+    if filename == None: find_codepoint('non_qualified')
+    
+    if filename != None:
+      count_found = count_found + 1
+    else:
+      count_missing += 1
+      missing += [emoji['unified']]
+      print("!! NOT FOUND! !!")
+
+if __name__ == "__main__":
+  if settings['copy_sources']:
+    do_files()

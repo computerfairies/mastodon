@@ -12,6 +12,10 @@ it's supposed to look for emoji in order of priority (looks in following folders
 
 emoji svgs are not uploaded to this repo cause they're big. supply your own!
 
+## how to use:
+1. run `bundle exec rails emojis:generate[ignore_existing=true]` to generate a map of all emoji 11.0 unicode codepoints
+2. run `build_spritesheet.py` to find svgs in designated folders corresponding to said codepoints
+3. run `bundle exec rails emojis:generate` (no argument this time) in order to match emoji only to available files and avoid broken images
+
 TODO:
 - build spritesheet
-- instead of using emoji-data spritesheet info to build emoji files actually use data from [this](https://github.com/tootsuite/mastodon/blob/master/lib/tasks/emojis.rake) which will be more complete
