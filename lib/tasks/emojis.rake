@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 def codepoints_to_filename(codepoints)
-  codepoints.downcase.gsub(/\A[0]+/, '').tr(' ', '-')
+  codepoints.to_s.downcase.gsub(/\A[0]+/, '').tr(' ', '-')
 end
 
 def codepoints_to_unicode(codepoints)
@@ -14,8 +14,8 @@ end
 
 namespace :emojis do
   desc 'Generate a unicode to filename mapping'
-  task :generate do
-    source = 'http://www.unicode.org/Public/emoji/5.0/emoji-test.txt'
+  task :generate, [:arg] do |t, args|
+    source = 'http://www.unicode.org/Public/emoji/11.0/emoji-test.txt'
     codes  = []
     dest   = Rails.root.join('app', 'javascript', 'mastodon', 'features', 'emoji', 'emoji_map.json')
 
@@ -36,15 +36,23 @@ namespace :emojis do
         agg
       end
     end
-
-    existence_maps = grouped_codes.map { |c| c.map { |cc| [cc, File.exist?(Rails.root.join('public', 'emoji', codepoints_to_filename(cc) + '.svg'))] }.to_h }
+    
     map = {}
+    if args == "ignore_existing"
+      grouped_codes.each do |group|
+        group.each do |key|
+          map[codepoints_to_unicode(key)] = codepoints_to_filename(key)
+        end
+      end
+    else
+      existence_maps = grouped_codes.map { |c| c.map { |cc| [cc, File.exist?(Rails.root.join('public', 'emoji', codepoints_to_filename(cc) + '.svg'))] }.to_h }
 
-    existence_maps.each do |group|
-      existing_one = group.key(true)
+      existence_maps.each do |group|
+        existing_one = group.key(true)
 
-      group.each_key do |key|
-        map[codepoints_to_unicode(key)] = codepoints_to_filename(existing_one)
+        group.each_key do |key|
+          map[codepoints_to_unicode(key)] = codepoints_to_filename(existing_one)
+        end
       end
     end
 
