@@ -34,6 +34,6 @@
     "size": 32,
     "destination": "../public/emoji",
     "sheet": "sheet_10.png",
-    "copy_sources": true
+    "copy_sources": false
   }
 }
