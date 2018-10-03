@@ -8,14 +8,11 @@ this is a script i made to build emoji packs for mastodon
 
 it's supposed to look for emoji in order of priority (looks in following folders if hasn't found in previous), then copy all found emoji to `../public/emoji` and build a spritesheet based on `emoji_pretty.json`
 
-**work in progress!!** does not build spritesheet yet, only find and copy emoji files
+**work in progress!!** there are issues building the spritesheet
 
 emoji svgs are not uploaded to this repo cause they're big. supply your own!
 
 ## how to use:
 1. run `bundle exec rails emojis:generate[ignore_existing=true]` to generate a map of all emoji 11.0 unicode codepoints
-2. run `build_spritesheet.py` to find svgs in designated folders corresponding to said codepoints
+2. run `build_spritesheet.py` to find svgs in designated folders corresponding to said codepoints and then build spritesheet with the images in `../public/emoji`
 3. run `bundle exec rails emojis:generate` (no argument this time) in order to match emoji only to available files and avoid broken images
-
-TODO:
-- build spritesheet
