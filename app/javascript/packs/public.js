@@ -148,13 +148,7 @@ function main() {
     }
   });
 
-  delegate(document, '#account_note', 'input', ({ target }) => {
-    const noteCounter = document.querySelector('.note-counter');
-
-    if (noteCounter) {
-      noteCounter.textContent = sizeBioText - length(target.value);
-    }
-  });
+  delegate(document, '.account_note', 'input', sizeBioText);
 
   delegate(document, '#account_avatar', 'change', ({ target }) => {
     const avatar = document.querySelector('.card .avatar img');
