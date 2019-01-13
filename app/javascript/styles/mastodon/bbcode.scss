@@ -55,11 +55,9 @@ $bbcode2: lighten($black, 15%) !default;
     }
   }
 
-  /* attr color is not supported!!!
-    &__color {
-      color: attr(data-bbcodecolor color);
-    }
-  */
+  &__color {
+    color: attr(data-bbcodecolor color);
+  }
 
   &__faicon {
     display: inline-block !important;
