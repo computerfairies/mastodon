@@ -138,7 +138,7 @@ class Formatter
         if entity[:indices][0] > 4 && html[entity[:indices][0]-5..entity[:indices][0]-1] == "[url="
           entity[:url]
         else
-          link_to_url(entity)
+          link_to_url(entity, options)
         end
       elsif entity[:hashtag]
         link_to_hashtag(entity)
