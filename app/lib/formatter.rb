@@ -135,7 +135,11 @@ class Formatter
 
     rewrite(html.dup, entities) do |entity|
       if entity[:url]
-        link_to_url(entity, options)
+        if entity[:indices][0] > 4 && html[entity[:indices][0]-5..entity[:indices][0]-1] == "[url="
+          entity[:url]
+        else
+          link_to_url(entity)
+        end
       elsif entity[:hashtag]
         link_to_hashtag(entity)
       elsif entity[:screen_name]
@@ -357,7 +361,16 @@ class Formatter
           :html_open => '<span class="bbcode__s">', :html_close => '</span>',
           :description => 'line through',
           :example => 'This is [s]line through[/s].'},
-      }, :enable, :i, :b, :color, :quote, :code, :size, :u, :s, :spin, :pulse, :flip, :large, :colorhex, :faicon)
+        :url => {
+          :html_open => '<a target="_blank" rel="nofollow noopener" href="%url%">%between%', :html_close => '</a>',
+          :description => 'Link to another page',
+          :example => '[url=http://www.google.com/]link[/url].',
+          :require_between => true,
+          :allow_quick_param => true, :allow_between_as_param => false,
+          :quick_param_format => /^((((http|https|ftp):\/\/)).+)$/,
+          :param_tokens => [{:token => :url}],
+          :quick_param_format_description => 'The URL should start with http:// https://, ftp://'},
+      }, :enable, :i, :b, :color, :quote, :code, :size, :u, :s, :spin, :pulse, :flip, :large, :colorhex, :faicon, :url)
     rescue Exception => e
     end
     html
