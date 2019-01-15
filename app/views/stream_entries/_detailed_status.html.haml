@@ -53,6 +53,9 @@
     - elsif status.private_visibility?
       %span.detailed-status__link<
         = fa_icon('lock')
+    - elsif status.local?
+      %span.detailed-status__link<
+        = fa_icon('users')
     - else
       = link_to remote_interaction_path(status), class: 'modal-button detailed-status__link' do
         = fa_icon('retweet')
