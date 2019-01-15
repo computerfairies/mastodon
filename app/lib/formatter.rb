@@ -36,6 +36,7 @@ class Formatter
     html = "RT @#{prepend_reblog} #{html}" if prepend_reblog
     html = encode_and_link_urls(html, linkable_accounts)
     html = simple_format(html, {}, sanitize: false)
+    html = fix_newlines(html)
     html = rp_format(html)
     html = html.delete("\n")
     html = encode_custom_emojis(html, status.emojis) if options[:custom_emojify]
@@ -48,25 +49,16 @@ class Formatter
     pclasses = { "\u{1F4AD}" => "thought_bubble",
                  "\u{1F4AC}" => "speech_bubble",
                  "\u{1F6AB}" => "out_of_character" }
-    chunks = html.split("\n")
-    last_class = nil
-    i = 0
-    while i < chunks.length
-      h = chunks[i]
-      h = h.gsub(/<p>[\u{1F300}-\u{1F6FF}]/) do |match|
-        if pclasses[match[3]]
-          last_class = pclasses[match[3]]
-          "<p class='#{pclasses[match[3]]}'>#{match[3]}"
-        else
-          match
-        end
-      end
-      h = h.gsub(/<p>(\.\.\.|…)/) { |match|
-          last_class ? "<p class='#{last_class}'>..." : match }
-      chunks[i] = h
-      i += 1
-    end
-    return chunks.join('')
+    
+    replace = html.gsub(/^(<p>)?([\u{1F300}-\u{1F6FF}])(.*)((<br>)|(<br><br>)|(<\/p>))?$/) { |match|
+        pclasses[$2] ? "<span class='#{pclasses[$2]}'>#{$2}#{$3}</span>#{$4}" : match }
+
+    replace.html_safe
+  end
+
+  def fix_newlines(html)
+    fix = html.gsub(/<\/p>\s*<p>/, "<br><br>\n")
+    fix.gsub(/<br \/>/, "<br>\n")
   end
 
   def reformat(html)
