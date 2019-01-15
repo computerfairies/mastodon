@@ -36,14 +36,16 @@
       = link_to remote_interaction_path(status), class: 'status__action-bar-button icon-button modal-button', style: 'font-size: 18px; width: 23.1429px; height: 23.1429px; line-height: 23.15px;' do
         = fa_icon 'reply fw'
       .status__action-bar__counter__label= obscured_counter status.replies_count
-    = link_to remote_interaction_path(status), class: 'status__action-bar-button icon-button modal-button', style: 'font-size: 18px; width: 23.1429px; height: 23.1429px; line-height: 23.15px;' do
-      - if status.public_visibility? || status.unlisted_visibility?
+    - if status.public_visibility? || status.unlisted_visibility?
+      = link_to remote_interaction_path(status), class: 'status__action-bar-button icon-button modal-button', style: 'font-size: 18px; width: 23.1429px; height: 23.1429px; line-height: 23.15px;' do
         = fa_icon 'retweet fw'
-      - elsif status.private_visibility?
-        = fa_icon 'lock fw'
-      - elsif status.local?
-        = fa_icon 'users fw'
-      - else
-        = fa_icon 'envelope fw'
+    - else
+      = button_tag disabled: true, class: 'status__action-bar-button icon-button modal-button disabled', style: 'font-size: 18px; width: 23.1429px; height: 23.1429px; line-height: 23.15px;' do
+        - if status.private_visibility?
+          = fa_icon 'lock fw'
+        - elsif status.local?
+          = fa_icon 'users fw'
+        - else
+          = fa_icon 'envelope fw'
     = link_to remote_interaction_path(status), class: 'status__action-bar-button icon-button modal-button', style: 'font-size: 18px; width: 23.1429px; height: 23.1429px; line-height: 23.15px;' do
       = fa_icon 'star fw'
