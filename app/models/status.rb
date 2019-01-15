@@ -343,6 +343,9 @@ class Status < ApplicationRecord
       elsif account.id == target_account.id # author can see own stuff
         all
       else
+        # local accounts should include local-only posts
+        visibility.push(:local) if target_account.local?
+        
         # followers can see followers-only stuff, but also things they are mentioned in.
         # non-followers can see everything that isn't private/direct, but can see stuff they are mentioned in.
         visibility.push(:private) if account.following?(target_account)
