@@ -50,8 +50,8 @@ class Formatter
                  "\u{1F4AC}" => "speech_bubble",
                  "\u{1F6AB}" => "out_of_character" }
     
-    replace = html.gsub(/^(<p>)?([\u{1F300}-\u{1F6FF}])(.*)((<br>)|(<br><br>)|(<\/p>))?$/) { |match|
-        pclasses[$2] ? "<span class='#{pclasses[$2]}'>#{$2}#{$3}</span>#{$4}" : match }
+    replace = html.gsub(/^(<p>)?([\u{1F300}-\u{1F6FF}])(.*?)((<br>)|(<br><br>)|(<\/p>))?$/) { |match|
+        pclasses[$2] ? "#{$1}<span class='#{pclasses[$2]}'>#{$2}#{$3}</span>#{$4}" : match }
 
     replace.html_safe
   end
