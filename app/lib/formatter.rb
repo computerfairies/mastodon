@@ -274,6 +274,15 @@ class Formatter
   end
 
   def format_bbcode(html)
+    colorhex = {
+      :html_open => '<span class="bbcode__color" data-bbcodecolor="#%colorcode%">', :html_close => '</span>',
+      :description => 'Use color code',
+      :example => '[colorhex=ffffff]White text[/colorhex]',
+      :allow_quick_param => true, :allow_between_as_param => false,
+      :quick_param_format => /([0-9a-fA-F]{6})/,
+      :quick_param_format_description => 'The size parameter \'%param%\' is incorrect',
+      :param_tokens => [{:token => :colorcode}]}
+
     begin
       html = html.bbcode_to_html(false, {
         :spin => {
@@ -323,14 +332,8 @@ class Formatter
           :allow_quick_param => true, :allow_between_as_param => false,
           :quick_param_format => /([a-z]+)/i,
           :param_tokens => [{:token => :color}]},
-        :colorhex => {
-          :html_open => '<span class="bbcode__color" data-bbcodecolor="#%colorcode%">', :html_close => '</span>',
-          :description => 'Use color code',
-          :example => '[colorhex=ffffff]White text[/colorhex]',
-          :allow_quick_param => true, :allow_between_as_param => false,
-          :quick_param_format => /([0-9a-fA-F]{6})/,
-          :quick_param_format_description => 'The size parameter \'%param%\' is incorrect',
-          :param_tokens => [{:token => :colorcode}]},
+        :colorhex => colorhex,
+        :hex => colorhex,
         :faicon => {
           :html_open => '<span class="fa fa-%between% bbcode__faicon" style="display: none"></span><span class="faicon_FTL">%between%</span>', :html_close => '',
           :description => 'Use Font Awesome Icons',
@@ -362,7 +365,7 @@ class Formatter
           :quick_param_format => /^((((http|https|ftp):\/\/)).+)$/,
           :param_tokens => [{:token => :url}],
           :quick_param_format_description => 'The URL should start with http:// https://, ftp://'},
-      }, :enable, :i, :b, :color, :quote, :code, :size, :u, :s, :spin, :pulse, :flip, :large, :colorhex, :faicon, :url)
+      }, :enable, :i, :b, :color, :quote, :code, :size, :u, :s, :spin, :pulse, :flip, :large, :colorhex, :faicon, :url, :hex)
     rescue Exception => e
     end
     html
