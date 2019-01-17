@@ -33,7 +33,6 @@
     "sprite_input": "emoji_pretty.json",
     "size": 32,
     "destination": "../public/emoji",
-    "sheet": "sheet_10.png",
-    "copy_sources": false
+    "sheet": "sheet_10.png"
   }
 }

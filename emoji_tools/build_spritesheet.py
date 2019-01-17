@@ -2,6 +2,7 @@
 import json
 import os
 import shutil
+import sys
 from wand.image import Image
 
 with open('emoji_settings.json') as f:
@@ -15,7 +16,7 @@ with open(settings['sprite_input']) as f:
 with open(settings['copy_input']) as f:
   copy_map = json.load(f)
 
-# EMOJI FILES STUFF
+## EMOJI FILES STUFF
 def do_files():
   count_found = 0
   count_missing = 0
@@ -50,31 +51,34 @@ def find_source_svg(codepoint):
 
   # check each source in order for emoji
   for source in sources:
+    bcodepoint = codepoint
     # replace to match source filename
     try:
       for key in source['replace']:
-        codepoint = codepoint.replace(key, source['replace'][key])
+        bcodepoint = bcodepoint.replace(key, source['replace'][key])
     except KeyError:
       pass
     try:
       if not source['leading_zero']:
-        codepoint = codepoint.lstrip('0')
+        bcodepoint = bcodepoint.lstrip('0')
     except KeyError:
       pass
     try:
       if source['lowercase']:
-        codepoint = codepoint.lower()
+        bcodepoint = bcodepoint.lower()
     except KeyError:
       pass
-    filename = os.path.join(source['folder'], source['filename'].replace("{codepoint}", codepoint))
+
+    filename = os.path.join(source['folder'], source['filename'].replace("{codepoint}", bcodepoint))
 
     # source found
     if os.path.exists(filename):
+      print("codepoint " + codepoint + " found in source " + source['folder'])
       return filename
   
   return None
 
-# SPRITESHEET STUFF
+## SPRITESHEET STUFF
 def do_spritesheet():
   count_found = 0
   count_missing = 0
@@ -131,9 +135,21 @@ def add_to_spritesheet(filename, spreadsheet, x, y):
   spreadsheet.composite(im, x*34+1, y*34+1)
   pass
 
+## HELP
+def print_help():
+  print("usage:")
+  print("  --skip-copy            skips copying files from source")
+  print("  --skip-spritesheet     skips building spritesheet png")
+
 if __name__ == "__main__":
-  if settings['copy_sources']:
+  if "--help" in sys.argv:
+    print_help()
+    sys.exit()
+
+  if "--skip-copy" not in sys.argv:
     print("Finding source SVGs to copy to {:s}".format(settings['destination']))
     do_files()
-  print("Rebuilding spritesheet...")
-  do_spritesheet()
+  
+  if "--skip-spritesheet" not in sys.argv:
+    print("Rebuilding spritesheet...")
+    do_spritesheet()
