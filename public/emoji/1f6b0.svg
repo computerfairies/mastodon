@@ -1,12 +1,20 @@
-<svg width="128" height="128" style="enable-background:new 0 0 128 128;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <path d="M121.03,0H7.02C3.24,0,0.14,3.09,0.14,6.88v114.01c0,3.79,3.1,6.88,6.88,6.88h114.01 c3.78,0,6.88-3.09,6.88-6.88V6.88C127.91,3.09,124.81,0,121.03,0z" style="fill:#006CA2;"/>
-  <g>
-    <path d="M48.22,71.54H35.94c-1.9,0-3.44-1.54-3.44-3.44v0c0-17.34,14.06-31.39,31.39-31.39h47.45v19.16 H63.89c-6.76,0-12.24,5.48-12.24,12.24v0C51.66,70,50.12,71.54,48.22,71.54z" style="fill:#FFFFFF;"/>
-    <path d="M53.66,121.71H28.34c-1.24,0-2.3-0.91-2.47-2.14l-6.23-43.41c-0.2-1.37,0.75-2.63,2.12-2.83 c1.38-0.2,2.63,0.75,2.83,2.12l5.92,41.26h20.98l5.92-41.26c0.2-1.37,1.45-2.32,2.83-2.12c1.37,0.2,2.32,1.46,2.12,2.83 l-6.23,43.41C55.96,120.79,54.9,121.71,53.66,121.71z" style="fill:#FFFFFF;"/>
-    <path d="M86.69,63.18h-9.8c-6.6,0-12-5.4-12-12v-9.8c0-6.6,5.4-12,12-12h9.8c6.6,0,12,5.4,12,12v9.8 C98.69,57.78,93.29,63.18,86.69,63.18z" style="fill:#FFFFFF;"/>
-    <line style="fill:none;stroke:#FFFFFF;stroke-width:11;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="62.02" x2="101.55" y1="14.5" y2="14.5"/>
-    <line style="fill:none;stroke:#FFFFFF;stroke-width:11;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="81.79" x2="81.79" y1="14.5" y2="46.28"/>
-    <path d="M49.81,90.05c-2.97,0-4.62-1.12-5.82-1.93c-0.98-0.67-1.57-1.07-3-1.07c-1.43,0-2.02,0.4-3,1.07 c-1.2,0.82-2.84,1.93-5.81,1.93s-4.62-1.12-5.81-1.93c-0.98-0.67-1.57-1.07-3-1.07c-1.38,0-2.5-1.12-2.5-2.5s1.12-2.5,2.5-2.5 c2.97,0,4.62,1.12,5.81,1.93c0.98,0.67,1.57,1.07,3,1.07c1.43,0,2.02-0.4,3-1.07c1.2-0.82,2.84-1.93,5.81-1.93 c2.97,0,4.62,1.12,5.82,1.93c0.98,0.67,1.57,1.07,3,1.07c1.44,0,2.03-0.4,3-1.07c1.2-0.82,2.84-1.93,5.82-1.93 c1.38,0,2.5,1.12,2.5,2.5s-1.12,2.5-2.5,2.5c-1.44,0-2.03,0.4-3,1.07C54.43,88.94,52.79,90.05,49.81,90.05z" style="fill:#FFFFFF;"/>
-  </g>
-  <line style="fill:none;stroke:#FFFFFF;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="113.61" x2="113.61" y1="33.98" y2="58.58"/>
-</svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+<metadata>
+<rdf:RDF xmlns:cc="http://web.resource.org/cc/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc = "http://purl.org/dc/elements/1.1/"
+         >
+
+     <rdf:Description rdf:about="">
+       <dc:title>Mutant Standard emoji v0.3.1</dc:title>
+     </rdf:Description>
+
+    <cc:work rdf:about="">
+        <cc:license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+        <cc:attributionName>Dzuk</cc:attributionName>
+        <cc:attributionURL>http://mutant.tech/</cc:attributionURL>
+    </cc:work>
+
+</rdf:RDF>
+</metadata>
+<path id="potable_water" d="M32,32l0,-32l-32,0l0,32l32,0Z" style="fill:none;"/><clipPath id="_clip1"><path d="M32,32l0,-32l-32,0l0,32l32,0Z"/></clipPath><g clip-path="url(#_clip1)"><g id="outline"><path d="M24,32c4.418,0 8,-3.582 8,-8c0,-4.887 0,-11.113 0,-16c0,-4.418 -3.582,-8 -8,-8c-4.887,0 -11.113,0 -16,0c-4.418,0 -8,3.582 -8,8c0,4.887 0,11.113 0,16c0,4.418 3.582,8 8,8c4.887,0 11.113,0 16,0Z"/></g><g id="emoji"><path d="M2,24c0,1.591 0.632,3.117 1.757,4.243c1.126,1.125 2.652,1.757 4.243,1.757c4.724,0 11.276,0 16,0c1.591,0 3.117,-0.632 4.243,-1.757c1.125,-1.126 1.757,-2.652 1.757,-4.243c0,-4.724 0,-11.276 0,-16c0,-1.591 -0.632,-3.117 -1.757,-4.243c-1.126,-1.125 -2.652,-1.757 -4.243,-1.757c-4.724,0 -11.276,0 -16,0c-1.591,0 -3.117,0.632 -4.243,1.757c-1.125,1.126 -1.757,2.652 -1.757,4.243c0,4.724 0,11.276 0,16Z" style="fill:#334cec;"/><path d="M7,17l11,0c0,0 -1.364,6.821 -1.839,9.196c-0.094,0.468 -0.504,0.804 -0.981,0.804c-1.347,0 -4.013,0 -5.36,0c-0.477,0 -0.887,-0.336 -0.981,-0.804c-0.475,-2.375 -1.839,-9.196 -1.839,-9.196Zm10.5,-8l0,-2l3,0l0,2l4.5,0l0,3c0,0 -7.289,0 -10,0c-0.552,0 -1,0.448 -1,1c0,0.504 0,1.092 0,1.5c0,0.133 -0.053,0.26 -0.146,0.354c-0.094,0.093 -0.221,0.146 -0.354,0.146c-0.555,0 -1.445,0 -2,0c-0.133,0 -0.26,-0.053 -0.354,-0.146c-0.093,-0.094 -0.146,-0.221 -0.146,-0.354c0,-0.367 0,-0.904 0,-1.5c0,-1.061 0.421,-2.078 1.172,-2.828c0.75,-0.751 1.767,-1.172 2.828,-1.172l2.5,0Zm5.5,-4c0,-0.552 -0.448,-1 -1,-1c-1.537,0 -4.464,0 -6.001,0c-0.552,0 -0.999,0.447 -0.999,0.999c0,0.001 0,0.001 0,0.002c0,0.552 0.447,0.999 0.999,0.999c1.537,0 4.464,0 6.001,0c0.552,0 1,-0.448 1,-1c0,0 0,0 0,0Z" style="fill:#fff;"/></g></g></svg>

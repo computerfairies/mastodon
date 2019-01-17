@@ -6,7 +6,7 @@
          >
 
      <rdf:Description rdf:about="">
-       <dc:title>Mutant Standard emoji v0.3.0</dc:title>
+       <dc:title>Mutant Standard emoji v0.3.1</dc:title>
      </rdf:Description>
 
     <cc:work rdf:about="">
@@ -17,4 +17,4 @@
 
 </rdf:RDF>
 </metadata>
-<rect id="decreasing_graph" x="0" y="0" width="32" height="32" style="fill:none;"/><clipPath id="_clip1"><rect x="0" y="0" width="32" height="32"/></clipPath><g clip-path="url(#_clip1)"><g id="outline"><rect x="0" y="0" width="32" height="32" style="fill-rule:nonzero;"/></g><g id="emoji"><rect x="2" y="2" width="28" height="28" style="fill:#fff;"/><g><rect x="8" y="4" width="1" height="24" style="fill:#e6e6e6;"/><rect x="12" y="4" width="1" height="24" style="fill:#e6e6e6;"/><rect x="16" y="4" width="1" height="24" style="fill:#e6e6e6;"/><rect x="20" y="4" width="1" height="24" style="fill:#e6e6e6;"/><rect x="24" y="4" width="1" height="24" style="fill:#e6e6e6;"/><path d="M28,8l0,-1l-24,0l0,1l24,0Z" style="fill:#e6e6e6;"/><path d="M28,12l0,-1l-24,0l0,1l24,0Z" style="fill:#e6e6e6;"/><path d="M28,16l0,-1l-24,0l0,1l24,0Z" style="fill:#e6e6e6;"/><path d="M28,20l0,-1l-24,0l0,1l24,0Z" style="fill:#e6e6e6;"/><path d="M28,24l0,-1l-24,0l0,1l24,0Z" style="fill:#e6e6e6;"/></g><g><rect x="4" y="4" width="1" height="24" style="fill:#b3b3b3;"/><path d="M28,28l0,-1l-24,0l0,1l24,0Z" style="fill:#b3b3b3;"/></g><path d="M10,12.586l3,-3l15.707,15.707l-1.414,1.414l-14.293,-14.293l-3,3l-5.707,-5.707l1.414,-1.414l4.293,4.293Z" style="fill:#5462cb;fill-rule:nonzero;"/></g></g></svg>
+<rect id="decreasing_graph" x="0" y="0" width="32" height="32" style="fill:none;"/><clipPath id="_clip1"><rect x="0" y="0" width="32" height="32"/></clipPath><g clip-path="url(#_clip1)"><g id="outline"><rect x="0" y="0" width="32" height="32" style="fill-rule:nonzero;"/></g><g id="emoji"><rect x="2" y="2" width="28" height="28" style="fill:#fff;"/><g><rect x="8" y="4" width="1" height="24" style="fill:#e6e6e6;"/><rect x="12" y="4" width="1" height="24" style="fill:#e6e6e6;"/><rect x="16" y="4" width="1" height="24" style="fill:#e6e6e6;"/><rect x="20" y="4" width="1" height="24" style="fill:#e6e6e6;"/><rect x="24" y="4" width="1" height="24" style="fill:#e6e6e6;"/><path d="M28,8l0,-1l-24,0l0,1l24,0Z" style="fill:#e6e6e6;"/><path d="M28,12l0,-1l-24,0l0,1l24,0Z" style="fill:#e6e6e6;"/><path d="M28,16l0,-1l-24,0l0,1l24,0Z" style="fill:#e6e6e6;"/><path d="M28,20l0,-1l-24,0l0,1l24,0Z" style="fill:#e6e6e6;"/><path d="M28,24l0,-1l-24,0l0,1l24,0Z" style="fill:#e6e6e6;"/></g><g><rect x="4" y="4" width="1" height="24" style="fill:#b3b3b3;"/><path d="M28,28l0,-1l-24,0l0,1l24,0Z" style="fill:#b3b3b3;"/></g><path d="M10,12.586l3,-3l15.707,15.707l-1.414,1.414l-14.293,-14.293l-3,3l-5.707,-5.707l1.414,-1.414l4.293,4.293Z" style="fill:#334cec;fill-rule:nonzero;"/></g></g></svg>
