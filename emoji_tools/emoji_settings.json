@@ -6,7 +6,8 @@
       "filename": "{codepoint}.svg",
       "type": "non_qualified",
       "leading_zero": false,
-      "lowercase": true
+      "lowercase": true,
+      "default_skin": "-101622"
     },
     {
       "folder": "svg/blobmoji",

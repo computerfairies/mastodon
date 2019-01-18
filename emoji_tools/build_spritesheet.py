@@ -52,6 +52,7 @@ def find_source_svg(codepoint):
   # check each source in order for emoji
   for source in sources:
     bcodepoint = codepoint
+
     # replace to match source filename
     try:
       for key in source['replace']:
@@ -73,7 +74,20 @@ def find_source_svg(codepoint):
 
     # source found
     if os.path.exists(filename):
-      print("codepoint " + codepoint + " found in source " + source['folder'])
+      # check if emoji has skin modifiers
+      current_emoji = [x for x in emoji_map if x['non_qualified'] == codepoint.upper() or x['unified'] == codepoint.upper()]
+      if len(current_emoji) > 0:
+        try:
+          if current_emoji[0]['skin_variations']:
+            # if it has, use the default skin modifier from settings
+            new_filename = os.path.join(source['folder'], source['filename'].replace("{codepoint}", bcodepoint + source['default_skin']))
+            if os.path.exists(new_filename):
+              filename = new_filename
+        except KeyError:
+          pass
+
+      #print("codepoint " + codepoint + " found in source " + filename)
+
       return filename
   
   return None
@@ -90,7 +104,27 @@ def do_spritesheet():
 
   # iterate over every emoji in map file
   for emoji in emoji_map:
-    print(emoji['name'])
+    #print(emoji['name'])
+
+    # TODO: fix code reuse here
+    try:
+      if emoji['skin_variations']:
+        for skin in emoji['skin_variations']:
+          skin_info = emoji['skin_variations'][skin]
+
+          # find in svgs in public folder
+          filename = find_sprite_svg(skin_info['unified'])
+          if filename == None:
+            filename = find_sprite_svg(skin_info['non_qualified'])
+          
+          if filename != None:
+            count_found = count_found + 1
+            add_to_spritesheet(filename, spritesheet, skin_info['sheet_x'], skin_info['sheet_y'])
+          else:
+            count_missing += 1
+            missing += [skin_info['unified']]
+    except KeyError:
+      pass
 
     # find in svgs in public folder
     filename = find_sprite_svg(emoji['unified'])
