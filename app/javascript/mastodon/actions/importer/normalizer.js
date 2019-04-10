@@ -56,7 +56,7 @@ export function normalizeStatus(status, normalOldStatus) {
 
     normalStatus.search_index = domParser.parseFromString(searchContent, 'text/html').documentElement.textContent;
     normalStatus.contentHtml  = emojify(normalStatus.content, emojiMap);
-    normalStatus.spoilerHtml  = emojify(spoilerText, emojiMap);
+    normalStatus.spoilerHtml  = emojify(normalStatus.spoiler_html, emojiMap);
     normalStatus.hidden       = spoilerText.length > 0 || normalStatus.sensitive;
   }
 
