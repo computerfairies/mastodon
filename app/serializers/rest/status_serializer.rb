@@ -44,6 +44,10 @@ class REST::StatusSerializer < ActiveModel::Serializer
     Formatter.instance.format(object)
   end
 
+  def spoiler_text
+    Formatter.instance.format_spoiler(object)
+  end
+
   def url
     TagManager.instance.url_for(object)
   end
