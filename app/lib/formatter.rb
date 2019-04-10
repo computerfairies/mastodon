@@ -53,7 +53,7 @@ class Formatter
     replace = html.gsub(/^(<p>)?([\u{1F300}-\u{1F6FF}])(.*?)((<br>)|(<br><br>)|(<\/p>))?$/) { |match|
         pclasses[$2] ? "#{$1}<span class='#{pclasses[$2]}'>#{$2}#{$3}</span>#{$4}" : match }
 
-    replace.html_safe
+    replace
   end
 
   def format_markup(html, me = false)
@@ -75,6 +75,7 @@ class Formatter
     return status.text if status.local?
 
     text = status.text.gsub(/(<br \/>|<br>|<\/p>)+/) { |match| "#{match}\n" }
+    text = text.gsub(/\[.*\]/, "")
     strip_tags(text)
   end
 
@@ -89,8 +90,9 @@ class Formatter
   end
 
   def format_spoiler(status, **options)
-    html = format_markup(status.spoiler_text)
+    html = encode(status.spoiler_text)
     html = encode_custom_emojis(html, status.emojis, options[:autoplay])
+    html = format_markup(html)
     html.html_safe # rubocop:disable Rails/OutputSafety
   end
 
