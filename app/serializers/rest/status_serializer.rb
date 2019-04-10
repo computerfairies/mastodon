@@ -2,7 +2,7 @@
 
 class REST::StatusSerializer < ActiveModel::Serializer
   attributes :id, :created_at, :in_reply_to_id, :in_reply_to_account_id,
-             :sensitive, :spoiler_text, :visibility, :language,
+             :sensitive, :spoiler_text, :spoiler_html, :visibility, :language,
              :uri, :content, :url, :replies_count, :reblogs_count,
              :favourites_count
 
@@ -44,7 +44,7 @@ class REST::StatusSerializer < ActiveModel::Serializer
     Formatter.instance.format(object)
   end
 
-  def spoiler_text
+  def spoiler_html
     Formatter.instance.format_spoiler(object)
   end
 
