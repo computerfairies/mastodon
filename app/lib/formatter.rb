@@ -56,6 +56,11 @@ class Formatter
     replace.html_safe
   end
 
+  def format_markup(html, me = false)
+    html = format_bbcode(html)
+    rp_format(html)
+  end
+
   def fix_newlines(html)
     fix = html.gsub(/<\/p>\s*<p>/, "<br><br>\n")
     fix.gsub(/<br \/>/, "<br>\n")
@@ -84,7 +89,7 @@ class Formatter
   end
 
   def format_spoiler(status, **options)
-    html = encode(status.spoiler_text)
+    html = format_markup(status.spoiler_text)
     html = encode_custom_emojis(html, status.emojis, options[:autoplay])
     html.html_safe # rubocop:disable Rails/OutputSafety
   end
@@ -97,12 +102,14 @@ class Formatter
 
   def format_field(account, str, **options)
     return reformat(str).html_safe unless account.local? # rubocop:disable Rails/OutputSafety
+    html = format_markup(str, true)
     html = encode_and_link_urls(str, me: true)
     html = encode_custom_emojis(html, account.emojis, options[:autoplay]) if options[:custom_emojify]
     html.html_safe # rubocop:disable Rails/OutputSafety
   end
 
   def linkify(text)
+    html = format_markup(text)
     html = encode_and_link_urls(text)
     html = simple_format(html, {}, sanitize: false)
     html = html.delete("\n")
