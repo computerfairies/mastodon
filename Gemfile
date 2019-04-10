@@ -93,8 +93,6 @@ gem 'webpush'
 gem 'json-ld-preloaded', '~> 2.2.1'
 gem 'rdf-normalize', '~> 0.3.1'
 
-gem "kramdown", "~> 2.1"
-gem 'redcarpet', '~> 3.0.0'
 gem 'ruby-bbcode'
 gem "colorize", "~> 0.8.1"
 
