@@ -96,7 +96,7 @@ gem 'rdf-normalize', '~> 0.3.1'
 gem "kramdown", "~> 2.1"
 gem 'redcarpet', '~> 3.0.0'
 gem 'ruby-bbcode'
-gem 'colorize'
+gem "colorize", "~> 0.8.1"
 
 group :development, :test do
   gem 'fabrication', '~> 2.20'
@@ -150,5 +150,3 @@ group :production do
   gem 'lograge', '~> 0.10'
   gem 'redis-rails', '~> 5.0'
 end
-
-gem "colorize", "~> 0.8.1"
