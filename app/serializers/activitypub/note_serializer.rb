@@ -22,7 +22,8 @@ class ActivityPub::NoteSerializer < ActiveModel::Serializer
   end
 
   def summary
-    Formatter.instance.format_spoiler(object).spoiler_text.presence
+    object.spoiler_text.presence
+#    Formatter.instance.format_spoiler(object).spoiler_text.presence
   end
 
   def content
